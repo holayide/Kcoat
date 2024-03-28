@@ -1,0 +1,11 @@
+.main {
+  width: 100%;
+  max-height: 800px;
+  background-color: pink;
+  display: flex;
+  padding: 2% 0 0;
+}
+
+.heroText {
+  border: 1px solid red;
+}
