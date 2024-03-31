@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../components/Header";
 import styles from "./Shop.module.css";
+import SortBy from "../pages/sort";
+import ProductsCategories from "../pages/ProductCategories";
+// import ProductCard from "../pages/ProductCard";
 export default function ShopPage() {
   return (
     <>
@@ -27,6 +30,9 @@ export default function ShopPage() {
           />
         </div>
       </div>
+      <SortBy />
+      <ProductsCategories />
+      {/* <ProductCard /> */}
     </>
   );
 }
