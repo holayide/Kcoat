@@ -2,35 +2,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* justify-content: space-around; */
   background-image: url('../images/Background.svg');
-  /* Adjust the path as needed */
   padding: 50px 0;
 }
 
 .heroContent {
-  text-align: center;
+  /* text-align: center; */
   background-color: #fff;
   width: 528px;
-  height: 349px;
+  height: 350px;
   flex-shrink: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+}
+
+.heroPara {
+  text-align: left;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px;
+}
+
+.heroDiv {
+  display: flex;
 }
 
 .heroTitle {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
+  font-family: Volkhov;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
 }
 
 .heroPrice {
   font-size: 1.5rem;
   color: #888;
   margin-bottom: 5px;
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .heroOffer {
-  color: #333;
   margin-bottom: 25px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .heroButton {
@@ -41,19 +74,20 @@
   cursor: pointer;
   font-size: 1rem;
   text-transform: uppercase;
+  margin: 20px;
 }
 
 .hero-button:hover {
   background-color: #5e0a95;
 }
 
-.heroImageWrapper {
-  /* max-width: 300px; */
-  /* Adjust size as needed */
-}
+
 
 .heroImage {
-  width: 529px;
-  height: 349px;
+  width: 535px;
+  height: 355px;
   flex-shrink: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
 }

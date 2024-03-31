@@ -7,13 +7,17 @@ export default function ShopPage() {
       <Header />
       <div className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <p>Original</p>
-          <h1 className={styles.heroTitle}>
-            Non-tarnishing Gold Polished Earring
-          </h1>
-          <p className={styles.heroPrice}>#10,000</p>
-          <p className={styles.heroOffer}>LIMITED TIME OFFER</p>
-          <button className={styles.heroButton}>SHOP NOW</button>
+          <p className={styles.heroPara}>Original</p>
+          <div className={styles.heroDiv}>
+            <h1 className={styles.heroTitle}>
+              Non-tarnishing Gold Polished Earring
+            </h1>
+            <p className={styles.heroPrice}>#10,000</p>
+            <br />
+            <br />
+            <p className={styles.heroOffer}>LIMITED TIME OFFER</p>
+          </div>
+          <button className={styles.heroButton}>Shop Now</button>
         </div>
         <div className={styles.heroImageWrapper}>
           <img
