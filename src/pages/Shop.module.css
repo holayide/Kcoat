@@ -1,0 +1,59 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-around; */
+  background-image: url('../images/Background.svg');
+  /* Adjust the path as needed */
+  padding: 50px 0;
+}
+
+.heroContent {
+  text-align: center;
+  background-color: #fff;
+  width: 528px;
+  height: 349px;
+  flex-shrink: 0;
+}
+
+.heroTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.heroPrice {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.heroOffer {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.heroButton {
+  background-color: #9856DA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-button:hover {
+  background-color: #5e0a95;
+}
+
+.heroImageWrapper {
+  /* max-width: 300px; */
+  /* Adjust size as needed */
+}
+
+.heroImage {
+  width: 529px;
+  height: 349px;
+  flex-shrink: 0;
+}
