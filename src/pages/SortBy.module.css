@@ -3,6 +3,8 @@
   align-items: center;
   margin-bottom: 10px;
   padding: 20px;
+  gap: 50px;
+  justify-content: space-between;
 }
 
 .sortByLabel {

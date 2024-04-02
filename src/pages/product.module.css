@@ -1,26 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
 .productCategories {
   padding: 20px;
   background: #EEE7FA;
   width: 343px;
-  height: 359px;
+  height: 459px;
   flex-shrink: 0;
 }
 
-.productCategories h4 {
+.productCategories h2 {
   padding: 20px;
   margin-bottom: 10px;
   color: #000;
   font-family: Volkhov;
   font-size: 21px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: normal;
 }
 
 .productCategories ul {
   list-style: none;
   display: inline-flex;
-  padding-right: 167px;
+  padding: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
