@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import styles from "./Shop.module.css";
 import SortBy from "../pages/sort";
 import ProductsCategories from "../pages/ProductCategories";
-import BrandCategories from "../pages/Brand";
+import BrandCategories from "../pages/BrandCategories";
 export default function ShopPage() {
   return (
     <>
