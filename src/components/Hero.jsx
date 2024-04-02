@@ -20,7 +20,9 @@ function HeroText() {
           everything you need to elevate your style, from classic attire to
           glamorous ensembles.
         </p>
-        <Button goto="./shop">Shop Now</Button>
+        <Button goto="./shop" classname={style.btn}>
+          Shop Now
+        </Button>
       </div>
     </div>
   );
@@ -33,7 +35,7 @@ function HeroImages() {
         <div className={style.blue}>
           <HeroImageShapes src="../../assets/blue-shape.svg" alt="Blue shape" />
         </div>
-        <div className={style.purple} class="">
+        <div className={style.purple}>
           <HeroImageShapes
             src="../../assets/purple-shape.svg"
             alt="Purple shape"

@@ -1,5 +1,4 @@
-import { lists } from "../utilities/ListNav";
-import { lists2 } from "../utilities/ListNav";
+import { lists, lists2 } from "../utilities/ListNav";
 import NavBar from "./NavBar";
 import style from "./Header.module.css";
 
@@ -10,13 +9,14 @@ export default function Header() {
       <NavBar lists={lists} />
       <SearchBar />
       <NavBar lists={lists2} />
+      <MenuBar />
     </header>
   );
 }
 
 export function Logo() {
   return (
-    <div>
+    <div className={style.logo}>
       <img src="../../assets/icons/kcoat-logo.svg" alt="Kcoat Logo" />
     </div>
   );
@@ -27,6 +27,14 @@ function SearchBar() {
     <div className={style.search}>
       <img src="../../assets/icons/search.svg" alt="" />
       <input type="text" />
+    </div>
+  );
+}
+
+function MenuBar() {
+  return (
+    <div className={style.menu}>
+      <img src="../../assets/icons/sidemenu.svg" alt="sidemenu" />
     </div>
   );
 }

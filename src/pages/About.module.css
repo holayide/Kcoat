@@ -1,0 +1,17 @@
+.HeroAbout {
+  background-image: url("../../public/assets/tile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImg {
+  width: 85%;
+  margin: 55px 0;
+}
+
+.heroImg img {
+  width: 100%;
+}

@@ -1,8 +1,15 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .header {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.2em 8% 0.2em 0;
+  padding: 1em 8% 0.2em 0;
   background-color: white;
 }
 
@@ -29,11 +36,6 @@ nav ul li a:hover {
   color: #3734a9;
 }
 
-/* nav ul li .active {
-  color: red;
-  border: 1px solid red;
-} */
-
 .search {
   display: flex;
   border: 1px solid #3734a9;
@@ -53,4 +55,75 @@ nav ul li a:hover {
   height: 100%;
   border: none;
   outline: none;
+}
+
+.menu {
+  display: none;
+}
+
+/* media query */
+@media (min-width: 870px) and (max-width: 1110px) {
+  /* .header {
+    background-color: burlywood;
+  } */
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 870px) {
+  /* .header {
+    background-color: blue;
+  } */
+
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  /* .header {
+    background-color: pink;
+  } */
+
+  .search,
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  /* .header {
+    background-color: blueviolet;
+  } */
+
+  .search,
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
 }
