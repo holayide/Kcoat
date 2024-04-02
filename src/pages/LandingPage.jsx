@@ -22,6 +22,7 @@ export default function LandingPage() {
       <CustomersReview />
       <NewsLetter />
       <Footer />
+
     </>
   );
 }
