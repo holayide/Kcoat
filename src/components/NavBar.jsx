@@ -6,9 +6,10 @@ export default function NavBar({ lists }) {
       <ul>
         {lists.map((list) => (
           <HeaderIcons
-            icon={list.icon}
+            iconimage={list.iconimage}
             icontext={list.icontext}
             goto={list.goto}
+            key={list.id}
           />
         ))}
       </ul>
@@ -16,11 +17,11 @@ export default function NavBar({ lists }) {
   );
 }
 
-export function HeaderIcons({ icon, icontext, goto }) {
+export function HeaderIcons({ iconimage, icontext, goto }) {
   return (
     <li>
       <NavLink to={goto}>
-        <img src={icon} alt={icontext} />
+        <img src={iconimage} alt={icontext} />
         <p>{icontext}</p>
       </NavLink>
     </li>

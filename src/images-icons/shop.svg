@@ -1,0 +1,12 @@
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/Cart" clip-path="url(#clip0_83_6342)">
+<path id="Vector" d="M9.75 22C10.3023 22 10.75 21.5523 10.75 21C10.75 20.4477 10.3023 20 9.75 20C9.19772 20 8.75 20.4477 8.75 21C8.75 21.5523 9.19772 22 9.75 22Z" stroke="#3734A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M20.75 22C21.3023 22 21.75 21.5523 21.75 21C21.75 20.4477 21.3023 20 20.75 20C20.1977 20 19.75 20.4477 19.75 21C19.75 21.5523 20.1977 22 20.75 22Z" stroke="#3734A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M1.75 1H5.75L8.43 14.39C8.52144 14.8504 8.77191 15.264 9.13755 15.5583C9.50318 15.8526 9.9607 16.009 10.43 16H20.15C20.6193 16.009 21.0768 15.8526 21.4425 15.5583C21.8081 15.264 22.0586 14.8504 22.15 14.39L23.75 6H6.75" stroke="#3734A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_83_6342">
+<rect width="24" height="24" fill="white" transform="translate(0.75)"/>
+</clipPath>
+</defs>
+</svg>

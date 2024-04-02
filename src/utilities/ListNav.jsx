@@ -1,21 +1,33 @@
+import home from "../images-icons/home-2.svg";
+import shop from "../images-icons/shop.svg";
+import info from "../images-icons/info-circle.svg";
+import help from "../images-icons/Help.svg";
+import user from "../images-icons/User.svg";
+import like from "../images-icons/Like.svg";
+import cart from "../images-icons/cart.svg";
+
 export const lists = [
   {
-    icon: "../../assets/icons/home-2.svg",
+    id: 1,
+    iconimage: home,
     icontext: "Home",
     goto: "/",
   },
   {
-    icon: "../../assets/icons/shop.svg",
+    id: 2,
+    iconimage: shop,
     icontext: "Shop",
     goto: "/shop",
   },
   {
-    icon: "../../assets/icons/info-circle.svg",
+    id: 3,
+    iconimage: info,
     icontext: "About",
-    goto: " ",
+    goto: "/about",
   },
   {
-    icon: "../../assets/icons/Help.svg",
+    id: 4,
+    iconimage: help,
     icontext: "Help",
     goto: " ",
   },
@@ -23,17 +35,20 @@ export const lists = [
 
 export const lists2 = [
   {
-    icon: "../../assets/icons/User.svg",
+    id: 1,
+    iconimage: user,
     icontext: "Account",
     goto: " ",
   },
   {
-    icon: "../../assets/icons/Like.svg",
+    id: 2,
+    iconimage: like,
     icontext: "Wish List",
     goto: " ",
   },
   {
-    icon: "../../assets/icons/cart.svg",
+    id: 3,
+    iconimage: cart,
     icontext: "Cart",
     goto: " ",
   },
