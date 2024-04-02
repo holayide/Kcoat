@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import styles from "./Shop.module.css";
 import SortBy from "../pages/sort";
 import ProductsCategories from "../pages/ProductCategories";
-// import ProductCard from "../pages/ProductCard";
+import BrandCategories from "../pages/Brand";
 export default function ShopPage() {
   return (
     <>
@@ -32,7 +32,7 @@ export default function ShopPage() {
       </div>
       <SortBy />
       <ProductsCategories />
-      {/* <ProductCard /> */}
+      <BrandCategories />
     </>
   );
 }
