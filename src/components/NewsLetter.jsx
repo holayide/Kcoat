@@ -8,12 +8,14 @@ export default function NewsLetter() {
         Receive exclusive updates on our latest fashion trends and products
         directly to your inbox
       </p>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form action="#" onSubmit={(e) => e.preventDefault()}>
         <div className={style.label}>
-          <label htmlFor="email">Email*</label>
+          <label htmlFor="email" name="mail">
+            Email*
+          </label>
         </div>
         <div className={style.input}>
-          <input type="text" id="email" />
+          <input type="text" id="email" name="email" />
           <div>
             <input type="submit" value="Subscribe" className={style.submit} />
           </div>

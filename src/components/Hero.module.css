@@ -1,7 +1,6 @@
 .main {
   width: 100%;
   max-height: 800px;
-  /* background-color: pink; */
   background: linear-gradient(180deg, #4b91df 23%, #274f7b 100%);
   display: flex;
   align-items: center;
@@ -192,7 +191,6 @@
     height: calc(100vh - 70px);
     /* background-color: blue; */
     flex-direction: column;
-    /* justify-content: flex-end; */
     gap: 0.5%;
     position: relative;
   }
@@ -255,12 +253,17 @@
   }
 }
 
+@media (min-width: 546px) and (max-width: 600px) {
+  .heroImages {
+    width: 80%;
+    margin-left: 80px;
+  }
+}
+
 @media (max-width: 500px) {
   .main {
     height: calc(100vh - 70px);
-    /* background-color: burlywood; */
     flex-direction: column;
-    /* justify-content: flex-end; */
     gap: 5%;
     position: relative;
   }
@@ -326,8 +329,6 @@
 @media (min-width: 400px) and (max-width: 490px) {
   .main {
     max-height: calc(100vh - 70px);
-    /* background-color: burlywood; */
-    /* gap: 2%;  */
   }
 
   .leftText h1 {

@@ -29,7 +29,7 @@ export const lists = [
     id: 4,
     iconimage: help,
     icontext: "Help",
-    goto: " ",
+    goto: "/help",
   },
 ];
 
@@ -38,7 +38,7 @@ export const lists2 = [
     id: 1,
     iconimage: user,
     icontext: "Account",
-    goto: " ",
+    goto: "/account",
   },
   {
     id: 2,

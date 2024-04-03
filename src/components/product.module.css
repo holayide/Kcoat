@@ -3,17 +3,21 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 16px;
+  margin: 0 5%;
 }
 
 .productCategories {
-  padding: 20px;
-  background: #EEE7FA;
-  width: 343px;
-  height: 459px;
-  flex-shrink: 0;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.productCategories h2 {
+.productnames {
+  background-color: #eee7fa;
+}
+
+.productnames h2 {
   padding: 20px;
   margin-bottom: 10px;
   color: #000;
@@ -24,7 +28,7 @@
   line-height: normal;
 }
 
-.productCategories ul {
+.productnames ul {
   list-style: none;
   display: inline-flex;
   padding: 30px;
@@ -34,7 +38,7 @@
   gap: 43px;
 }
 
-.productCategories li {
+.productnames li {
   margin-bottom: 5px;
   cursor: pointer;
   color: #000;
@@ -43,4 +47,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+.cards {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4% 3%;
 }

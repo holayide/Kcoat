@@ -38,7 +38,7 @@ nav ul li a:hover {
 
 .search {
   display: flex;
-  border: 1px solid #3734a9;
+  border: 1px solid #000;
   border-radius: 8px;
   width: 30%;
   height: 35px;
@@ -63,10 +63,6 @@ nav ul li a:hover {
 
 /* media query */
 @media (min-width: 870px) and (max-width: 1110px) {
-  /* .header {
-    background-color: burlywood;
-  } */
-
   nav ul {
     gap: 2rem;
   }
@@ -77,10 +73,6 @@ nav ul li a:hover {
 }
 
 @media (min-width: 600px) and (max-width: 870px) {
-  /* .header {
-    background-color: blue;
-  } */
-
   nav {
     display: none;
   }
@@ -91,10 +83,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 600px) {
-  /* .header {
-    background-color: pink;
-  } */
-
   .search,
   nav {
     display: none;
@@ -114,10 +102,6 @@ nav ul li a:hover {
 }
 
 @media (max-width: 450px) {
-  /* .header {
-    background-color: blueviolet;
-  } */
-
   .search,
   nav {
     display: none;

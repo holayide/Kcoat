@@ -24,9 +24,11 @@ function Product({ title, price, imageSrc, rating, label, heart }) {
     ));
 
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.product}>
-        <img src={imageSrc} alt={title} className={styles.productImage} />
+        <div className={styles.productImage}>
+          <img src={imageSrc} alt={title} className={styles.productImage} />
+        </div>
         <div className={styles.titleSect}>
           <h3 className={styles.title}>{title}</h3>
           <img src={heart} alt={heart} />
@@ -50,7 +52,7 @@ function Product({ title, price, imageSrc, rating, label, heart }) {
           <p>ADD TO CART</p>
         </button>
       </div>
-    </div>
+    </>
   );
 }
 

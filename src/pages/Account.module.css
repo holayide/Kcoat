@@ -1,0 +1,51 @@
+.headWrapper {
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.container {
+  /* border: 1px solid red; */
+  margin: 33px 15% 0;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  /* border: 1px solid red; */
+}
+
+.heroHead {
+  font-family: var(--font-vol);
+  font-size: 1.875rem;
+}
+
+.forms .heroHead {
+  margin-bottom: 15px;
+}
+
+.container form {
+  border: 1px solid green;
+  width: 400px; /* changeeeeeeeeeee */
+}
+
+.container form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form > .checkbox {
+  flex-direction: row;
+}
+
+.forms form .login {
+  display: flex;
+  flex-direction: column;
+
+  /* background-origin: 1px solid red; */
+}
+/* color: #000;
+font-family: Satoshi;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; */

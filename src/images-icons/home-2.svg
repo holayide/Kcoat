@@ -1,8 +1,8 @@
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="vuesax/linear/home-2">
 <g id="home-2">
-<path id="Vector" d="M9.27 2.84016L3.88 7.04016C2.98 7.74016 2.25 9.23016 2.25 10.3602V17.7702C2.25 20.0902 4.14 21.9902 6.46 21.9902H18.04C20.36 21.9902 22.25 20.0902 22.25 17.7802V10.5002C22.25 9.29016 21.44 7.74016 20.45 7.05016L14.27 2.72016C12.87 1.74016 10.62 1.79016 9.27 2.84016Z" stroke="#3734A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Vector_2" d="M12.25 17.9902V14.9902" stroke="#3734A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector" d="M9.27 2.84016L3.88 7.04016C2.98 7.74016 2.25 9.23016 2.25 10.3602V17.7702C2.25 20.0902 4.14 21.9902 6.46 21.9902H18.04C20.36 21.9902 22.25 20.0902 22.25 17.7802V10.5002C22.25 9.29016 21.44 7.74016 20.45 7.05016L14.27 2.72016C12.87 1.74016 10.62 1.79016 9.27 2.84016Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12.25 17.9902V14.9902" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </g>
 </svg>
