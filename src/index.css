@@ -6,9 +6,15 @@
   src: url("./satoshi-fonts/Satoshi-Regular.ttf");
 }
 
+@font-face {
+  font-family: satoshi700;
+  src: url("./satoshi-fonts/Satoshi-Bold.ttf");
+}
+
 :root {
   --poppins: "Poppins", sans-serif;
   --satfont400: satoshi400;
+  --satfont700: satoshi700;
   --font-vol: "Volkhov", serif;
   --font-16: 1rem;
   --inter: "Inter", sans-serif;
