@@ -3,10 +3,12 @@ import Header from "../components/Header";
 import styles from "./Shop.module.css";
 import SortBy from "../components/Sort";
 import ProductsCategories from "../components/ProductCategories";
-import BrandCategories from "../components/BrandCategories";
+
+import Footer from "../components/Footer";
+
 export default function ShopPage() {
   return (
-    <>
+    <div>
       <Header />
       <div className={styles.heroSection}>
         <div className={styles.innerHeroSection}>
@@ -33,7 +35,7 @@ export default function ShopPage() {
       </div>
       <SortBy />
       <ProductsCategories />
-      <BrandCategories />
-    </>
+      {/* <Footer /> */}
+    </div>
   );
 }
