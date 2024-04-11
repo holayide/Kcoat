@@ -1,0 +1,61 @@
+.sortBy,
+.sortByViews,
+.sortByLabel {
+  display: flex;
+  align-items: center;
+}
+
+.sortBy {
+  justify-content: space-between;
+  margin: 10px 7% 0;
+}
+
+.sortBy h3 {
+  color: #000;
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.sortByViews {
+  gap: 20px;
+  font-family: satoshi400;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.sortByLabel {
+  gap: 30px;
+}
+
+.sortBySelect {
+  padding: 7px 20px 7px 30px;
+}
+
+.sortByLabel select {
+  border: 1px solid #555;
+  color: rgba(0, 0, 0, 0.48);
+  font-family: satoshi400;
+  font-size: 0.8rem;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  .sortBy {
+    margin: 10px 9% 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sortBy {
+    margin: 10px 3% 0;
+  }
+}
+
+@media (max-width: 659.9px) {
+  .sortBy {
+    display: none;
+  }
+}

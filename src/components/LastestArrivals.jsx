@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const arrivals = [
   {
-    id: 1,
+    id: 330,
     arrivalImage: "../../assets/mini-gown.svg",
     arrivalTitle: "MINI GOWN",
     description: "female wear",
@@ -13,7 +13,7 @@ const arrivals = [
     designedLove: "../../assets/icons/white-love.svg",
   },
   {
-    id: 2,
+    id: 331,
     arrivalImage: "../../assets/yellow-dress.svg",
     arrivalTitle: "YELLOW DRESS",
     description: "female wear",
@@ -21,7 +21,7 @@ const arrivals = [
     designedLove: "../../assets/icons/yellow-love.svg",
   },
   {
-    id: 3,
+    id: 332,
     arrivalImage: "../../assets/men-collection.svg",
     arrivalTitle: "MEN’S COLLECTION",
     description: "male wear",
@@ -29,7 +29,7 @@ const arrivals = [
     designedLove: "../../assets/icons/white-love.svg",
   },
   {
-    id: 4,
+    id: 333,
     arrivalImage: "../../assets/senator.svg",
     arrivalTitle: "SENATOR NATIVE",
     description: "male wear",
@@ -107,7 +107,6 @@ function ArrivalCard({ image, title, description, arrivalAmt, love }) {
             </div>
             <div>
               <Button goto="./#" classname={style.primaryBtn}>
-                <span></span>
                 ADD TO CART
               </Button>
             </div>

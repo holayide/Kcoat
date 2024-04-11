@@ -36,6 +36,27 @@ nav ul li a:hover {
   color: #3734a9;
 }
 
+.cartTop {
+  position: relative;
+}
+
+.cartCircle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: -5px;
+  background-color: rgb(201, 47, 47);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
 .search {
   display: flex;
   border: 1px solid #000;
@@ -73,7 +94,8 @@ nav ul li a:hover {
 }
 
 @media (min-width: 600px) and (max-width: 870px) {
-  nav {
+  nav,
+  .cartCircle {
     display: none;
   }
 
@@ -84,7 +106,8 @@ nav ul li a:hover {
 
 @media (max-width: 600px) {
   .search,
-  nav {
+  nav,
+  .cartCircle {
     display: none;
   }
 

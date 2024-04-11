@@ -8,7 +8,11 @@ export default function Header() {
       <Logo />
       <NavBar lists={lists} />
       <SearchBar />
-      <NavBar lists={lists2} />
+      <div className={style.cartTop}>
+        <NavBar lists={lists2} />
+        <div className={style.cartCircle}>0</div>
+      </div>
+
       <MenuBar />
     </header>
   );

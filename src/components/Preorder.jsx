@@ -3,19 +3,19 @@ import Button from "./Button";
 
 const preorderItems = [
   {
-    id: 1,
+    id: 220,
     img: "../../assets/trouser.svg",
     title: "PALLAZO TROUSER",
     amount: "18,000",
   },
   {
-    id: 2,
+    id: 221,
     img: "../../assets/ring.svg",
     title: "DIAMOND RING",
     amount: "120,000",
   },
   {
-    id: 3,
+    id: 222,
     img: "../../assets/shirt.svg",
     title: "MEN’S SHIRT",
     amount: "10,000",

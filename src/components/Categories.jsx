@@ -52,30 +52,3 @@ function CategoriesCards() {
 function CategoriesCard({ children }) {
   return <div>{children}</div>;
 }
-
-// function ShortCards({ catImage, catText, className }) {
-//   return (
-// <div className={className}>
-//   <img src={catImage} alt={catText} />
-//   <p className={style.catText}>{catText}</p>
-// </div>
-//   );
-// }
-
-//   <CategoriesCard
-//           catImage=
-//           catText="makeup products"
-//           className="cat-style"
-//         />
-
-/* function ShortCards({ catImage, catText, className }) {
-  return (
-    <div className={className}>
-      <img src={catImage} alt={catText} />
-      <p className={style.catText}>{catText}</p>
-    </div>
-  );
-} */
-
-// catImage=
-// catText=
