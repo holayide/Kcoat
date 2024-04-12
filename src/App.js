@@ -5,12 +5,13 @@ import PageNotFound from "./pages/PageNotFound";
 import About from "./pages/About";
 import Help from "./pages/Help";
 import Account from "./pages/Account";
-import Cart from "./components/Carts/Cart";
+import Cart from "./pages/Cart";
 import ProductDetails from "./components/Shops/ProductDetails";
 import womenbanner from "./components/ShopAssets/women_banner.png";
 import menbanner from "./components/ShopAssets/men_banner.png";
 import jewerybanner from "./components/ShopAssets/jewery_banner.png";
 import beautybanner from "./components/ShopAssets/beauty_banner.png";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,9 +1,12 @@
 import React from "react";
+import { useContext } from "react";
+import { ShopContext } from "../../Context/ShopContext";
 import { Link } from "react-router-dom";
-import Button from "../Button";
 import style from "./ProductItem.module.css";
 
 function ProductItem(props) {
+  const { addToCart } = useContext(ShopContext);
+
   return (
     <div className={style.items}>
       <div className={style.itemImage}>
@@ -30,11 +33,14 @@ function ProductItem(props) {
 
         <div className={style.details}>
           <p>{props.tag}</p>
-          <div className={style.productbuttons}>
+          <div
+            className={style.productbuttons}
+            onClick={() => {
+              addToCart(props.id);
+            }}
+          >
             <img src="../../assets/icons/minicart.svg" alt="mini cart" />
-            <Button goto="./#" classname={style.productBtn}>
-              ADD TO CART
-            </Button>
+            <button>ADD TO CART</button>
           </div>
         </div>
       </div>

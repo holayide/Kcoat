@@ -41,8 +41,8 @@ nav ul li a:hover {
 }
 
 .cartCircle {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -52,8 +52,9 @@ nav ul li a:hover {
   top: -5px;
   background-color: rgb(201, 47, 47);
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
+  font-family: "Inter", sans-serif;
   padding-top: 2px;
 }
 
