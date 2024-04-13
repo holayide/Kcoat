@@ -1,11 +1,10 @@
 .container {
-  /* display: none; */
   background-color: #27262b;
   color: white;
 }
 
 .wrapper {
-  padding: 3em 8% 4em;
+  padding: 3em 5% 4em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3%;
@@ -43,7 +42,7 @@
 .listHead {
   color: #fff;
   font-family: var(--font-vol);
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 ul li a {
@@ -74,6 +73,7 @@ hr {
   .wrapper {
     grid-template-columns: repeat(4, 200px);
     gap: 5%;
+    padding: 3em 8% 4em;
   }
 
   .listHead {

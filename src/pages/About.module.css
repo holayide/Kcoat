@@ -75,27 +75,6 @@
 
 /* mediaaaaaaaaa */
 
-@media (min-width: 1400px) {
-  .section {
-    margin: 5% 20% 8%;
-  }
-
-  .mission h3,
-  .vision h3,
-  .approach h3 {
-    font-size: 2.3rem;
-    margin-bottom: 7px;
-  }
-
-  .mission p,
-  .vision p,
-  .approach p {
-    font-size: 1.4rem;
-    width: 30ch;
-    line-height: 2.2rem;
-  }
-}
-
 @media (min-width: 800px) {
   .heroImg {
     overflow: hidden;
@@ -109,6 +88,28 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .section {
+    margin: 5% 20% 8%;
+  }
+
+  .mission h3,
+  .vision h3,
+  .approach h3 {
+    border: 1px solid pink;
+    font-size: 2.3rem;
+    margin-bottom: 7px;
+  }
+
+  .mission p,
+  .vision p,
+  .approach p {
+    font-size: 1.4rem;
+    width: 30ch;
+    line-height: 2.2rem;
+  }
+}
+
 @media (min-width: 800px) and (max-width: 1000px) {
   .section {
     margin: 5% 8% 8%;
@@ -117,7 +118,7 @@
   .mission h3,
   .vision h3,
   .approach h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .mission p,
@@ -136,6 +137,7 @@
   .vision h3,
   .approach h3 {
     font-size: 1.5rem;
+    border: 1px solid brown;
   }
 
   .mission p,
@@ -150,6 +152,7 @@
     grid-template-columns: repeat(1, 1fr);
     margin: 5% 5% 8%;
     row-gap: 30px;
+    border: 1px solid burlywood;
   }
 
   .missionImg,

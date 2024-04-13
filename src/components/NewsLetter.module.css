@@ -60,13 +60,23 @@
   background-color: #5028c6;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 701.9px) and (max-width: 1000px) {
   .wrapper h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .wrapper p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper h4 {
+    font-size: 1.1rem;
+  }
+
+  .wrapper p {
+    font-size: 0.65rem;
     width: 50ch;
     margin: auto;
   }
@@ -80,7 +90,7 @@
 
 @media (max-width: 500px) {
   .wrapper h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0 0.9rem;
   }
 
