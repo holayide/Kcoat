@@ -1,17 +1,24 @@
 /* global styling */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 @font-face {
   font-family: satoshi400;
   src: url("./satoshi-fonts/Satoshi-Regular.ttf");
 }
 
+@font-face {
+  font-family: satoshi700;
+  src: url("./satoshi-fonts/Satoshi-Bold.ttf");
+}
+
 :root {
   --poppins: "Poppins", sans-serif;
   --satfont400: satoshi400;
+  --satfont700: satoshi700;
   --font-vol: "Volkhov", serif;
   --font-16: 1rem;
   --inter: "Inter", sans-serif;
+  --saria: "Saira", sans-serif;
 }
 
 * {
@@ -38,4 +45,8 @@ a {
 .active {
   border-bottom: 1px solid #3734a9;
   /* color: #3734a9; */
+}
+
+.cartTop:last-of-type {
+  border: 1px solid red;
 }

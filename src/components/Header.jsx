@@ -1,14 +1,22 @@
 import { lists, lists2 } from "../utilities/ListNav";
 import NavBar from "./NavBar";
 import style from "./Header.module.css";
+import { useContext } from "react";
+import { ShopContext } from "../Context/ShopContext";
 
 export default function Header() {
+  const { getTotalCartItems } = useContext(ShopContext);
+
   return (
     <header className={style.header}>
       <Logo />
       <NavBar lists={lists} />
       <SearchBar />
-      <NavBar lists={lists2} />
+      <div className={style.cartTop}>
+        <NavBar lists={lists2} />
+        <div className={style.cartCircle}>{getTotalCartItems()}</div>
+      </div>
+
       <MenuBar />
     </header>
   );

@@ -1,0 +1,165 @@
+.helpHero {
+  background-image: url("../../public/assets/help.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(14, 12, 12, 0.32);
+}
+
+.innerHelpHero {
+  background-color: rgba(14, 12, 12, 0.32);
+  /* width: 100%; */
+  padding-top: 120px;
+  padding-bottom: 200px;
+  padding-left: 8%;
+  color: white;
+}
+
+.innerHelpHero h2 {
+  font-family: var(--font-vol);
+  font-size: 25px;
+  width: 20ch;
+}
+
+.innerHelpHero p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 20ch;
+  font-family: satoshi400;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+}
+
+.QAsession {
+  margin: 2em 8%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+  padding: 30px 0;
+}
+
+.inquires .qHeading {
+  text-align: center;
+}
+
+.inquires .qHeading > h2 {
+  font-family: var(--font-vol);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.inquires .qHeading > p {
+  color: #6b6b6b;
+  font-family: var(--poppins);
+  font-size: 0.9rem;
+  margin: 0.3em 0 2em;
+}
+
+.qCards {
+  background-color: #eee7fa;
+  padding: 0 1.5em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 2rem;
+
+  border-radius: 14.739px;
+  box-shadow: 0px 7.37px 14.739px 0px rgba(0, 0, 0, 0.2);
+}
+
+.cardsqtn {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.cardsqtn:last-of-type {
+  border-bottom: none;
+}
+
+.cardHead,
+.leftCardHead {
+  display: flex;
+  align-items: center;
+}
+
+.cardHead {
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 0.8rem 0 0.5rem;
+  cursor: pointer;
+  height: 8vh;
+  transition: 0.3s ease-out;
+}
+
+.leftCardHead {
+  gap: 0.5rem;
+}
+
+.leftCardHead .layer {
+  background-color: white;
+  padding: 0.2rem 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftCardHead > h5 {
+  color: #040f0f;
+  font-family: var(--poppins);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.cardsqtn > p {
+  color: #6b6b6b;
+  font-size: 0.8rem;
+  font-family: var(--poppins);
+  text-align: justify;
+  padding: 1rem 0 1.2rem;
+  line-height: 1.3rem;
+}
+
+.disapper {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .helpHero {
+    background-size: 100% 150%;
+    border: 1px solid pink;
+  }
+
+  .innerHelpHero h2 {
+    font-size: 3rem;
+  }
+
+  .innerHelpHero p {
+    font-size: 1.2rem;
+  }
+
+  .QAsession {
+    margin: 2em 8%;
+    gap: 4rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .QAsession {
+    margin: 0em 12%;
+    gap: 4rem 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .QAsession {
+    margin: 2em 7%;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: auto;
+  }
+
+  .qCards {
+    box-shadow: none;
+  }
+}

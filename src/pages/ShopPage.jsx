@@ -1,41 +1,43 @@
 import React from "react";
+import { useState } from "react";
+import style from "./Shop.module.css";
 import Header from "../components/Header";
-import styles from "./Shop.module.css";
-import SortBy from "../components/Sort";
-import ProductsCategories from "../components/ProductCategories";
-
 import Footer from "../components/Footer";
+import SortBy from "../components/Shops/Sort";
+import ProductCategories from "../components/Shops/ProductCategories";
+import SideBar from "../components/Shops/SideBar";
 
-export default function ShopPage() {
+export default function ShopPage({ banner, category }) {
+  // new--- God helppp
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  // ----------- Radio Filtering -----------
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  // ------------ Button Filtering -----------
+  const handleClick = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
   return (
     <div>
       <Header />
-      <div className={styles.heroSection}>
-        <div className={styles.innerHeroSection}>
-          <div className={styles.heroContent}>
-            <p className={styles.heroPara}>Original</p>
-            <div className={styles.heroDiv}>
-              <h1 className={styles.heroTitle}>
-                Non-tarnishing Gold Polished Earring
-              </h1>
-              <p className={styles.heroPrice}>#10,000</p>
-              <br />
-              <br />
-              <p className={styles.heroOffer}>LIMITED TIME OFFER</p>
-            </div>
-            <button className={styles.heroButton}>Shop Now</button>
-          </div>
-          <div className={styles.heroImageWrapper}>
-            <img
-              src="../../assets/ProductDisplay.svg"
-              alt="Gold Polished Earring"
-            />
-          </div>
-        </div>
+      <div className={style.banner}>
+        <img src={banner} alt="Banner" />
       </div>
       <SortBy />
-      <ProductsCategories />
-      {/* <Footer /> */}
-    </div>
+
+      <div className={style.shop}>
+        <SideBar handleClick={handleClick} handleChange={handleChange} />
+        <ProductCategories
+          category={category}
+          selectedCategory={selectedCategory}
+        />
+      </div>
+
+      <Footer />
+    </>
   );
 }

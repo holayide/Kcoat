@@ -5,6 +5,13 @@ import PageNotFound from "./pages/PageNotFound";
 import About from "./pages/About";
 import Help from "./pages/Help";
 import Account from "./pages/Account";
+import Cart from "./pages/Cart";
+import ProductDetails from "./components/Shops/ProductDetails";
+import womenbanner from "./components/ShopAssets/women_banner.png";
+import menbanner from "./components/ShopAssets/men_banner.png";
+import jewerybanner from "./components/ShopAssets/jewery_banner.png";
+import beautybanner from "./components/ShopAssets/beauty_banner.png";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -12,10 +19,30 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/shop" element={<ShopPage />} />
+          <Route
+            path="/women"
+            element={<ShopPage banner={womenbanner} category="women" />}
+          />
+          <Route
+            path="/men"
+            element={<ShopPage banner={menbanner} category="men" />}
+          />
+          <Route
+            path="/accessories"
+            element={<ShopPage banner={jewerybanner} category="accessories" />}
+          />
+          <Route
+            path="/lip"
+            element={<ShopPage banner={beautybanner} category="lip" />}
+          />
+          <Route path="/product" element={<ProductDetails />}>
+            <Route path=":productId" element={<ProductDetails />} />
+          </Route>
+          <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

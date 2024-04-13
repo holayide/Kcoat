@@ -1,8 +1,22 @@
 import Header from "../components/Header";
 import style from "./Account.module.css";
 import Button from "../components/Button";
+import { useState } from "react";
+import Footer from "../components/Footer";
+import NewsLetter from "../components/NewsLetter";
 
 export default function Account() {
+  const [view, setView] = useState(false);
+  const [viewReg, setViewReg] = useState(false);
+
+  function handleClick() {
+    setView(() => !view);
+  }
+
+  function handleClickReg() {
+    setViewReg(() => !viewReg);
+  }
+
   return (
     <div>
       <div className={style.headWrapper}>
@@ -14,7 +28,7 @@ export default function Account() {
           {/* form1 */}
           <form action="#/">
             <h2 className={style.heroHead}>LOGIN</h2>
-            <div className={style.login}>
+            <div className={style.input}>
               <label htmlFor="loginEmail">Email or username</label>
               <input
                 type="text"
@@ -23,22 +37,32 @@ export default function Account() {
                 required
               />
             </div>
-            <div className={style.login}>
+            <div className={style.input}>
               <label htmlFor="loginPword">Password</label>
               <input
-                type="password"
+                type={view ? "text" : "password"}
                 id="loginPword"
-                placeholder="abc123@gmail.com"
+                placeholder="......."
                 required
+              />
+              <img
+                onClick={handleClick}
+                src={
+                  view ? "../../assets/eye.svg " : "../../assets/eye-slash.svg"
+                }
+                alt="Eye"
               />
             </div>
             <div className={style.checkbox}>
               <input type="checkbox" name="check" id="check" />
-              <label htmlFor="check">check</label>
+              <label htmlFor="check">Remember me</label>
             </div>
 
-            <Button classname={style.primaryBtn}>Login</Button>
-            <div className="forget">
+            <div classname={style.acctBtn}>
+              <Button classname={style.tertiaryBtn}>Login</Button>
+            </div>
+
+            <div className={style.forget}>
               <a href="#/">Forget password ?</a>
             </div>
           </form>
@@ -46,7 +70,7 @@ export default function Account() {
           {/* form2 */}
           <form action="#/">
             <h2 className={style.heroHead}>REGISTER</h2>
-            <div className="registerUser">
+            <div className={style.input}>
               <label htmlFor="registerUser"> Username</label>
               <input
                 type="text"
@@ -56,26 +80,42 @@ export default function Account() {
               />
             </div>
 
-            <div className="registerEmail">
-              <label htmlFor="registerEmail">Email or username</label>
+            <div className={style.input}>
+              <label htmlFor="registerEmail">Email</label>
               <input
                 type="email"
-                id="loginEmail"
+                id="registerEmail"
                 placeholder="abc123@gmail.com"
                 required
               />
             </div>
 
-            <div className="registerPword">
+            <div className={style.input}>
               <label htmlFor="registerPword">Password</label>
-              <input type="password" id="registerPword" required />
+              <input
+                type={viewReg ? "text" : "password"}
+                id="registerPword"
+                placeholder="......."
+                required
+              />
+              <img
+                onClick={handleClickReg}
+                src={
+                  viewReg
+                    ? "../../assets/eye.svg "
+                    : "../../assets/eye-slash.svg"
+                }
+                alt="Eye"
+              />
             </div>
-            <div>
-              <Button classname={style.tertiaryBtn}>Login</Button>
+            <div classname={style.acctBtn}>
+              <Button classname={style.tertiaryBtn}>Sign up</Button>
             </div>
           </form>
         </div>
       </div>
+      <NewsLetter />
+      <Footer />
     </div>
   );
 }

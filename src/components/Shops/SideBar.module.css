@@ -1,0 +1,237 @@
+.navbars {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  margin-top: 100px;
+}
+
+@media (min-width: 1350px) {
+  .navbars {
+    width: 23%;
+  }
+}
+
+@media (max-width: 659.9px) {
+  .navbars {
+    width: 100%;
+  }
+}
+
+.brandCategory,
+.brandTags,
+.brandPrice {
+  background-color: #eee7fa;
+  padding: 20px 0 30px;
+  height: 25rem;
+}
+
+/* .brandPrice {
+  height: 25rem;
+} */
+
+.brandCategory h3,
+.brandTags h3,
+.brandPrice h3 {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  padding: 0 20px 0 13px;
+}
+
+.brandbtns {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.brandCategory ul {
+  display: block;
+}
+
+.brandlist li {
+  margin: 42px 0 0 15px;
+}
+
+.brandlist li a {
+  color: black;
+  font-weight: bold;
+  font-family: satoshi400;
+  font-size: 0.8rem;
+}
+
+.brandlist li a:hover {
+  color: #9856da;
+}
+
+.priceline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 7px; /* margin for price */
+}
+
+.circle1,
+.circle2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #7b61ff;
+  background-color: #eee7fa;
+}
+
+.priceline > hr {
+  border: 3px solid #9856da;
+  background-color: #9856da;
+  width: 70%;
+  height: 7px;
+}
+
+.brandPrice p {
+  color: #0e0c0c;
+  font-family: satoshi400;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brandPrice > hr {
+  border: 1px solid rgba(14, 12, 12, 0.3);
+  margin: 0 15px 15px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  margin: 20px 0 30px;
+}
+
+/* radio */
+.sidebarlabelcontainer {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebarlabelcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.all {
+  background: linear-gradient(blue, crimson);
+}
+
+.sidebarlabelcontainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.sidebarlabelcontainer input:checked ~ .checkmark {
+  /* background-color: #2196f3; */
+  /* border: 1px solid brown; */
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebarlabelcontainer input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.sidebarlabelcontainer .checkmark::after {
+  top: 6px;
+  left: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* weight */
+.weight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0 30px;
+}
+
+.btnweight {
+  width: 50px;
+  height: 25px;
+  flex-shrink: 0;
+  background-color: white;
+  border: 0.2px solid rgba(0, 0, 0, 0.2);
+
+  font-family: "Volkhov", serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 660px) and (max-width: 900px) {
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .inputs {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 659.9px) {
+  .brandTags,
+  .brandPrice {
+    display: none;
+  }
+
+  .brandCategory {
+    background-color: white;
+    padding: 15px 0;
+    height: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .brandCategory h3 {
+    display: none;
+  }
+
+  .brandCategory ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brandlist li {
+    margin: 0px 10px;
+  }
+
+  .navbars {
+    gap: 0px;
+    margin-top: 0px;
+  }
+}

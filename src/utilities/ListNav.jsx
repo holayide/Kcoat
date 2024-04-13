@@ -17,7 +17,7 @@ export const lists = [
     id: 2,
     iconimage: shop,
     icontext: "Shop",
-    goto: "/shop",
+    goto: "/women",
   },
   {
     id: 3,
@@ -50,6 +50,6 @@ export const lists2 = [
     id: 3,
     iconimage: cart,
     icontext: "Cart",
-    goto: " ",
+    goto: "/cart",
   },
 ];
