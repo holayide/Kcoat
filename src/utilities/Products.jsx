@@ -21,19 +21,19 @@ export const popularProducts = [
   {
     id: 443,
     productImage: "../../assets/print-shirt.svg",
-    productTitle: "SENATOR NATIVE",
+    productTitle: "MEN AFRICAN PRINT SHIRT",
     productAmt: "10,000",
   },
   {
     id: 444,
     productImage: "../../assets/men-wrist-set.svg",
-    productTitle: "SENATOR NATIVE",
+    productTitle: "MEN WRIST SET",
     productAmt: "12,000",
   },
   {
     id: 445,
     productImage: "../../assets/channel-makeup.svg",
-    productTitle: "SENATOR NATIVE",
+    productTitle: "CHANNEL MAKEUP SET",
     productAmt: "20,000",
   },
 ];

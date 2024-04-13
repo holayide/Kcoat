@@ -8,14 +8,14 @@
   padding: 3em 8% 4em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5%;
+  gap: 3%;
 }
 
 .connect > p {
   width: 12ch;
   font-family: var(--satfont400);
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .socials {
@@ -72,7 +72,6 @@ hr {
 
 @media (min-width: 1050px) {
   .wrapper {
-    background-color: brown;
     grid-template-columns: repeat(4, 200px);
     gap: 5%;
   }
@@ -84,12 +83,15 @@ hr {
   ul li a {
     font-size: 0.9rem;
   }
+
+  .connect > p {
+    font-size: 1rem;
+  }
 }
 
 /* 650px */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .wrapper {
-    background-color: blue;
     grid-template-columns: repeat(2, 200px);
     gap: 0;
     padding: 3em 8% 2em;
@@ -104,7 +106,6 @@ hr {
 /* mobile */
 @media (max-width: 480px) {
   .wrapper {
-    background-color: pink;
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
