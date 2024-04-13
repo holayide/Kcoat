@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Button from "./Button";
 import style from "./Hero.module.css";
 
@@ -21,8 +21,8 @@ function HeroText() {
           everything you need to elevate your style, from classic attire to
           glamorous ensembles.
         </p>
-        <Button goto="./shop" classname={style.btn}>
-          <Link to="/women">Shop Now</Link>
+        <Button goto="/women" classname={style.btn}>
+          Shop Now
         </Button>
       </div>
     </div>

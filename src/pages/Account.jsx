@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import style from "./Account.module.css";
-import Button from "../components/Button";
 import { useState } from "react";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
@@ -60,9 +59,9 @@ export default function Account() {
             </div>
 
             <div classname={style.acctBtn}>
-              <Button classname={style.tertiaryBtn}>
-                <Link to="/Profile">Login</Link>
-              </Button>
+              <Link to="/Profile" className={style.tertiaryBtn}>
+                Login
+              </Link>
             </div>
 
             <div className={style.forget}>
@@ -112,7 +111,9 @@ export default function Account() {
               />
             </div>
             <div classname={style.acctBtn}>
-              <Button classname={style.tertiaryBtn}>Sign up</Button>
+              <Link to="/#" className={style.tertiaryBtn}>
+                Sign up
+              </Link>
             </div>
           </form>
         </div>
