@@ -137,7 +137,6 @@
   .vision h3,
   .approach h3 {
     font-size: 1.5rem;
-    border: 1px solid brown;
   }
 
   .mission p,
@@ -152,7 +151,6 @@
     grid-template-columns: repeat(1, 1fr);
     margin: 5% 5% 8%;
     row-gap: 30px;
-    border: 1px solid burlywood;
   }
 
   .missionImg,
