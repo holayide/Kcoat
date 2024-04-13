@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  gap: 200px;
+  gap: 20rem;
 }
 
 .productnames {
@@ -61,37 +61,28 @@
 @media (max-width: 720px) {
   .container {
     flex-direction: column;
-    /* Change flex direction to column */
     align-items: center;
-    /* Center align items */
     margin: 0;
-    /* Remove side margins */
   }
 
   .productCategories {
     width: 100%;
-    /* Take full width */
     padding: 1rem;
-    /* Adjust padding */
     gap: 50px;
-    /* Adjust gap */
   }
 
   .cards {
     width: 100%;
-    /* Take full width */
   }
 }
 
 /* Media query for screens with a width of 320 pixels */
 @media (max-width: 320px) {
   .productnames h2 {
-    font-size: 18px;
-    /* Adjust font size */
+    font-size: 12px;
   }
 
   .productnames li {
     font-size: 14px;
-    /* Adjust font size */
   }
 }

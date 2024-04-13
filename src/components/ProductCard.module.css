@@ -4,15 +4,9 @@
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 6px; */
-  /* width: 100%;
-  max-width: 261px; */
-  /* height: 100%; */
-  /* max-height: 484px; */
 }
 
 .product:hover {
@@ -48,7 +42,7 @@
 .titleSect img {
   display: flex;
   width: 16.506px;
-  /* height: 16.781px; */
+  height: 16.781px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -69,8 +63,6 @@
 .label {
   display: flex;
   padding: 1px 6px;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .cartButton {
@@ -100,37 +92,28 @@
   height: auto;
 }
 
-/* Original CSS code... */
-
 /* Media query for screens with a width of 720 pixels */
 @media (max-width: 720px) {
   .titleSect {
     gap: 20px;
-    /* Adjust the gap between elements */
   }
 
   .price {
     font-size: 10px;
-    /* Adjust the font size of the price */
   }
 
   .cartButton {
     padding: 6px 12px;
-    /* Adjust padding of the cart button */
     margin: 0 8px 8px;
-    /* Adjust margin of the cart button */
   }
 
   .cartButton p {
     font-size: 8px;
-    /* Adjust font size of the text in the cart button */
   }
 
   .cartIcon {
     margin-right: 6px;
-    /* Adjust margin of the cart icon */
     width: 14px;
-    /* Adjust width of the cart icon */
   }
 }
 
@@ -138,46 +121,33 @@
 @media (max-width: 320px) {
   .product {
     max-width: 100%;
-    /* Make the product card take full width */
-    max-height: none;
-    /* Remove max height */
     gap: 6px;
-    /* Restore gap between elements */
   }
 
   .title {
     font-size: 12px;
-    /* Adjust font size of the title */
     line-height: 14px;
-    /* Adjust line height of the title */
   }
 
   .price {
     font-size: 9px;
-    /* Adjust font size of the price */
   }
 
   .label {
     padding: 1px 4px;
-    /* Adjust padding of the label */
   }
 
   .cartButton {
     padding: 6px 10px;
-    /* Adjust padding of the cart button */
     margin: 0 6px 6px;
-    /* Adjust margin of the cart button */
   }
 
   .cartButton p {
     font-size: 7px;
-    /* Adjust font size of the text in the cart button */
   }
 
   .cartIcon {
     margin-right: 6px;
-    /* Adjust margin of the cart icon */
     width: 12px;
-    /* Adjust width of the cart icon */
   }
 }
