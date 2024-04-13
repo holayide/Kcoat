@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import style from "./Account.module.css";
 import Button from "../components/Button";
@@ -59,7 +60,9 @@ export default function Account() {
             </div>
 
             <div classname={style.acctBtn}>
-              <Button classname={style.tertiaryBtn}>Login</Button>
+              <Button classname={style.tertiaryBtn}>
+                <Link to="/Profile">Login</Link>
+              </Button>
             </div>
 
             <div className={style.forget}>

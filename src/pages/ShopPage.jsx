@@ -38,6 +38,6 @@ export default function ShopPage({ banner, category }) {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }

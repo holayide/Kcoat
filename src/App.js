@@ -11,6 +11,7 @@ import womenbanner from "./components/ShopAssets/women_banner.png";
 import menbanner from "./components/ShopAssets/men_banner.png";
 import jewerybanner from "./components/ShopAssets/jewery_banner.png";
 import beautybanner from "./components/ShopAssets/beauty_banner.png";
+import ProfileDetails from "./pages/ProfileDetails";
 import Payment from "./pages/Payment";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/help" element={<Help />} />
           <Route path="/account" element={<Account />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<ProfileDetails />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
