@@ -149,7 +149,6 @@
 
   .inquires .qHeading > p {
     font-size: 0.9rem;
-    border: 1px solid blue;
   }
 }
 
@@ -162,7 +161,6 @@
 
 @media (max-width: 800px) {
   .QAsession {
-    border: 1px solid green;
     margin: 2em 7%;
     grid-template-columns: repeat(1, 1fr);
     width: 70%;
