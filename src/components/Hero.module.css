@@ -39,6 +39,11 @@
   font-size: var(--font-16);
 }
 
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn:hover {
   opacity: 0.5;
 }

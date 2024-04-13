@@ -22,7 +22,7 @@ export default function ShopPage({ banner, category }) {
   };
 
   return (
-    <>
+    <div>
       <Header />
       <div className={style.banner}>
         <img src={banner} alt="Banner" />
@@ -38,6 +38,6 @@ export default function ShopPage({ banner, category }) {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }

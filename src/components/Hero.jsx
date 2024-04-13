@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import style from "./Hero.module.css";
 
@@ -21,7 +22,7 @@ function HeroText() {
           glamorous ensembles.
         </p>
         <Button goto="./shop" classname={style.btn}>
-          Shop Now
+          <Link to="/women">Shop Now</Link>
         </Button>
       </div>
     </div>

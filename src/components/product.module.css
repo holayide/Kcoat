@@ -3,14 +3,16 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 16px;
-  margin: 0 5%;
+  border: 1px solid red;
+  margin: 0 4%;
 }
 
 .productCategories {
   width: 25%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  padding: 1rem;
+  gap: 20rem;
 }
 
 .productnames {
@@ -54,4 +56,33 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4% 3%;
+}
+
+@media (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .productCategories {
+    width: 100%;
+    padding: 1rem;
+    gap: 50px;
+  }
+
+  .cards {
+    width: 100%;
+  }
+}
+
+/* Media query for screens with a width of 320 pixels */
+@media (max-width: 320px) {
+  .productnames h2 {
+    font-size: 12px;
+  }
+
+  .productnames li {
+    font-size: 14px;
+  }
 }
