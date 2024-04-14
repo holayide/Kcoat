@@ -111,7 +111,7 @@ export default function Account() {
               />
             </div>
             <div classname={style.acctBtn}>
-              <Link to="/#" className={style.tertiaryBtn}>
+              <Link to="#/" className={style.tertiaryBtn}>
                 Sign up
               </Link>
             </div>

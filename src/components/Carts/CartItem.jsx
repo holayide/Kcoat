@@ -23,7 +23,7 @@ export default function CartItem() {
       {datas.map((e) => {
         if (cartItems[e.id] > 0) {
           return (
-            <div>
+            <div key={e.id}>
               <div
                 className={`${style.cartitemsFormat} ${style.cartitemsFormatMain}`}
               >
@@ -38,7 +38,9 @@ export default function CartItem() {
                 <button className={style.cartitemsQuantity}>
                   <span>-</span> {cartItems[e.id]} <span>+</span>
                 </button>
-                <p>₦{e.price * cartItems[e.id]}</p>
+                <p className={style.subtotalHeadItem}>
+                  ₦{e.price * cartItems[e.id]}
+                </p>
 
                 <div>
                   <img

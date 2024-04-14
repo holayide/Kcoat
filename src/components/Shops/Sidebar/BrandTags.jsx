@@ -21,10 +21,10 @@ export default function BrandTags({ handleClick }) {
         <h3>TAGS</h3>
         <div className={style.brandbtns}>
           <Buttons onClick={handleClick} value="" title="All Products" />
-          <Buttons onClick={handleClick} value="body" title="Body" />
-          <Buttons onClick={handleClick} value="neck" title="Neck" />
-          <Buttons onClick={handleClick} value="hand" title="Hand" />
-          <Buttons onClick={handleClick} value="lips" title="Lips" />
+          <Buttons value="Body" title="Body" />
+          <Buttons value="neck" title="Neck" />
+          <Buttons value="hand" title="Hand" />
+          <Buttons value="lips" title="Lips" disabled />
         </div>
       </div>
     </>

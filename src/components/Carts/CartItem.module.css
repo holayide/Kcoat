@@ -97,3 +97,36 @@
 .cartitemsTotal > a:hover {
   background-color: rgba(41, 45, 50, 0.8);
 }
+
+@media (max-width: 600px) {
+  .cartitem h1 {
+    font-size: 2rem;
+  }
+
+  .cartItemHead,
+  .subtotalHeadItem {
+    display: none;
+  }
+
+  .cartitemsFormatMain {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15% 10%;
+
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+
+  .cartitemsFormat {
+    margin-bottom: 10px;
+  }
+
+  .carticonProductIcon {
+    grid-row: span 4;
+    height: 80px;
+  }
+
+  .cartitemsDown {
+    margin: 100px auto;
+    float: none;
+  }
+}

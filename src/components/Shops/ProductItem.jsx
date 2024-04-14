@@ -11,7 +11,7 @@ function ProductItem(props) {
     <div className={style.items}>
       <div className={style.itemImage}>
         <Link to={`/product/${props.id}`}>
-          <img src={props.image} alt="images" />
+          <img onClick={window.scrollTo(0, 0)} src={props.image} alt="images" />
         </Link>
       </div>
 
