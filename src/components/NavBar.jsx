@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import style from "./Header.module.css";
 
-export default function NavBar({ lists }) {
+export default function NavBar({ lists, isOpen }) {
   return (
-    <nav>
+    <nav className={`${style.nav} ${isOpen ? style.navMobile : ""}`}>
       <ul>
         {lists.map((list) => (
           <HeaderIcons

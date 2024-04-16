@@ -173,7 +173,7 @@
 
   /* Premier Support */
   .services {
-    margin: 0 15% 0 5%;
+    margin: 0 10%;
   }
 
   .quality {
@@ -194,7 +194,6 @@
 @media (max-width: 600px) {
   .main {
     height: calc(100vh - 70px);
-    /* background-color: blue; */
     flex-direction: column;
     gap: 0.5%;
     position: relative;

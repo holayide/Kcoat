@@ -1,23 +1,31 @@
 import { lists, lists2 } from "../utilities/ListNav";
 import NavBar from "./NavBar";
 import style from "./Header.module.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ShopContext } from "../Context/ShopContext";
 
 export default function Header() {
   const { getTotalCartItems } = useContext(ShopContext);
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsOpen(() => !isOpen);
+  }
 
   return (
     <header className={style.header}>
       <Logo />
-      <NavBar lists={lists} />
+      <div className={style.navLeft}>
+        <NavBar lists={lists} isOpen={isOpen} />
+      </div>
+
       <SearchBar />
       <div className={style.cartTop}>
-        <NavBar lists={lists2} />
+        <NavBar lists={lists2} isOpen={isOpen} />
         <div className={style.cartCircle}>{getTotalCartItems()}</div>
       </div>
 
-      <MenuBar />
+      <MenuBar toggleMenu={toggleMenu} isOpen={isOpen} />
     </header>
   );
 }
@@ -39,10 +47,14 @@ function SearchBar() {
   );
 }
 
-function MenuBar() {
+function MenuBar({ toggleMenu, isOpen }) {
   return (
-    <div className={style.menu}>
-      <img src="../../assets/icons/sidemenu.svg" alt="sidemenu" />
+    <div onClick={toggleMenu} className={style.menu}>
+      {isOpen ? (
+        "❌"
+      ) : (
+        <img src="../../assets/icons/sidemenu.svg" alt="sidemenu" />
+      )}
     </div>
   );
 }

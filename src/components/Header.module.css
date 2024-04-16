@@ -103,11 +103,47 @@ nav ul li a:hover {
   .menu {
     display: block;
   }
+
+  /* mobile responsiveness */
+  .navLeft .navMobile {
+    padding-bottom: 370px;
+    padding-left: 12px;
+  }
+
+  .cartTop .navMobile {
+    padding-bottom: 50px;
+  }
+
+  .navMobile {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navMobile ul {
+    flex-direction: column;
+  }
+
+  .navMobile ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* end */
 }
 
 @media (max-width: 600px) {
   .search,
-  nav,
+  .nav,
   .cartCircle {
     display: none;
   }
@@ -123,15 +159,99 @@ nav ul li a:hover {
   .logo img {
     width: 100%;
   }
+
+  /* mobile responsiveness */
+  /* .navLeft .navMobile {
+    padding-bottom: 370px;
+  }
+
+  .cartTop {
+    position: relative;
+    left: 70px;
+  }
+
+  .cartTop .navMobile {
+    position: absolute;
+    padding-bottom: 50px;
+  }
+
+  .navMobile {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navMobile ul {
+    flex-direction: column;
+  }
+
+  .navMobile ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  } */
+
+  /* end */
 }
 
+/* small screens */
 @media (max-width: 450px) {
   .search,
-  nav {
+  .nav {
     display: none;
   }
 
   .menu {
     display: block;
+    cursor: pointer;
   }
+
+  /* mobile responsiveness */
+  /* .navLeft .navMobile {
+    padding-bottom: 370px;
+    padding-left: 12px;
+  }
+
+  .cartTop {
+    position: relative;
+    left: 56px;
+  }
+
+  .cartTop .navMobile {
+    padding-bottom: 50px;
+  }
+
+  .navMobile {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 50%;
+    height: calc(100vh - 70px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navMobile ul {
+    flex-direction: column;
+  }
+
+  .navMobile ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  } */
+
+  /* end */
 }
