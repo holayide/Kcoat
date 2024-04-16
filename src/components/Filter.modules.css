@@ -1,4 +1,4 @@
-.filter-container {
+/* .filter-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -75,4 +75,4 @@ input[type='range']::-moz-range-track {
 .color-button.selected,
 .weight-button.selected {
   border: 2px solid blue;
-}
+} */

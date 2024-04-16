@@ -26,7 +26,7 @@ export default function Account() {
         <h2 className={style.heroHead}>My account</h2>
         <div className={style.forms}>
           {/* form1 */}
-          <form action="#/">
+          <form action="/#">
             <h2 className={style.heroHead}>LOGIN</h2>
             <div className={style.input}>
               <label htmlFor="loginEmail">Email or username</label>
@@ -70,7 +70,7 @@ export default function Account() {
           </form>
 
           {/* form2 */}
-          <form action="#/">
+          <form action="/#">
             <h2 className={style.heroHead}>REGISTER</h2>
             <div className={style.input}>
               <label htmlFor="registerUser"> Username</label>
@@ -111,7 +111,7 @@ export default function Account() {
               />
             </div>
             <div classname={style.acctBtn}>
-              <Link to="#/" className={style.tertiaryBtn}>
+              <Link to="/#" className={style.tertiaryBtn}>
                 Sign up
               </Link>
             </div>
