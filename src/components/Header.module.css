@@ -94,6 +94,7 @@ nav ul li a:hover {
   }
 }
 
+/* mobile responsiveness for large desktop */
 @media (min-width: 600px) and (max-width: 870px) {
   nav,
   .cartCircle {
@@ -104,23 +105,33 @@ nav ul li a:hover {
     display: block;
   }
 
-  /* mobile responsiveness */
+  .navLeft,
+  .cartTop {
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .navLeft {
+    top: 70px;
+    max-height: calc(100vh - 70px);
+    background-color: white;
+  }
+
+  .cartTop {
+    top: 315px;
+  }
+
   .navLeft .navMobile {
-    padding-bottom: 370px;
-    padding-left: 12px;
+    padding-bottom: calc(100vh - 70px);
   }
 
   .cartTop .navMobile {
-    padding-bottom: 50px;
+    padding-left: 5.5%;
   }
 
   .navMobile {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 50%;
-    height: calc(100vh - 70px);
-    background-color: white;
+    padding-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,14 +146,13 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    font-size: 1.2rem;
   }
-
-  /* end */
 }
 
-@media (max-width: 600px) {
-  .search,
+/* mobile responsiveness for small desktop */
+@media (max-width: 599.9px) {
   .nav,
   .cartCircle {
     display: none;
@@ -160,28 +170,33 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  /* mobile responsiveness */
-  /* .navLeft .navMobile {
-    padding-bottom: 370px;
+  .navLeft,
+  .cartTop {
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .navLeft {
+    top: 70px;
+    max-height: calc(100vh - 70px);
+    background-color: white;
   }
 
   .cartTop {
-    position: relative;
-    left: 70px;
+    top: 280px;
+  }
+
+  .navLeft .navMobile {
+    padding-bottom: calc(100vh - 70px);
   }
 
   .cartTop .navMobile {
-    position: absolute;
-    padding-bottom: 50px;
+    padding-left: 5.5%;
   }
 
   .navMobile {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 50%;
-    height: calc(100vh - 70px);
-    background-color: white;
+    padding-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -196,17 +211,19 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-  } */
-
-  /* end */
+    gap: 1.1rem;
+    font-size: 1.1rem;
+  }
 }
 
-/* small screens */
+/* media responsiveness for small screens */
 @media (max-width: 450px) {
-  .search,
   .nav {
     display: none;
+  }
+
+  .search img {
+    width: 2rem;
   }
 
   .menu {
@@ -214,28 +231,33 @@ nav ul li a:hover {
     cursor: pointer;
   }
 
-  /* mobile responsiveness */
-  /* .navLeft .navMobile {
-    padding-bottom: 370px;
-    padding-left: 12px;
+  .navLeft,
+  .cartTop {
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .navLeft {
+    top: 70px;
+    max-height: calc(100vh - 70px);
+    background-color: white;
   }
 
   .cartTop {
-    position: relative;
-    left: 56px;
+    top: 290px;
+  }
+
+  .navLeft .navMobile {
+    padding-bottom: calc(100vh - 70px);
   }
 
   .cartTop .navMobile {
-    padding-bottom: 50px;
+    padding-left: 5.5%;
   }
 
   .navMobile {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 50%;
-    height: calc(100vh - 70px);
-    background-color: white;
+    padding-top: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,7 +273,6 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-  } */
-
-  /* end */
+    font-size: 1.1rem;
+  }
 }

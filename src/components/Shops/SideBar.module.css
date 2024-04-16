@@ -175,19 +175,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   margin: 20px 0 30px;
 }
 
 .btnweight {
-  width: 50px;
+  width: 27px;
   height: 25px;
   flex-shrink: 0;
   background-color: white;
-  border: 0.2px solid rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 8px;
 
-  font-family: "Volkhov", serif;
-  font-size: 0.8rem;
+  font-family: satoshi400;
+  font-size: 0.6rem;
   font-weight: 700;
   cursor: pointer;
 }

@@ -15,7 +15,12 @@ export default function ProductDisplay({ product }) {
           <img src={product.image} alt="Products" />
         </div>
         <div className={style.productdisplayImg}>
-          <img className="productdisplay-main-img" src={product.image} alt="" />
+          <img
+            onClick={window.scrollTo(0, 0)}
+            className="productdisplay-main-img"
+            src={product.image}
+            alt="Bigger view"
+          />
         </div>
       </div>
 

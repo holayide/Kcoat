@@ -1,32 +1,37 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import datas from "../utilities/datas";
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
   let cart = {};
-  for (let i = 0; i < datas.length + 1; i++) {
-    cart[i] = 0;
+  for (const data of datas) {
+    cart[data.id] = 0;
   }
   return cart;
 };
 
-// parse
-// const cartFromLocalStorage = JSON.parse(
-//   localStorage.getItem("cartItems") || getDefaultCart()
-// );
+// parsing local storage
+let initialCart = getDefaultCart();
+try {
+  const storedCart = JSON.parse(localStorage.getItem("cartItems"));
+  if (storedCart) {
+    initialCart = storedCart;
+  }
+} catch (error) {
+  console.error("Error parsing cart from local storage:", error);
+}
 
 const ShopContextProvider = (props) => {
-  const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [cartItems, setCartItems] = useState(initialCart);
 
   // local storage implementation
-  // useEffect(() => {
-  //   localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  // }, [cartItems]);
+  useEffect(() => {
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-    // console.log(cartItems);
   };
 
   const removeFromCart = (itemId) => {
@@ -38,7 +43,7 @@ const ShopContextProvider = (props) => {
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         let itemInfo = datas.find((product) => product.id === Number(item));
-        totalAmount += itemInfo.price * cartItems[item];
+        totalAmount += itemInfo ? itemInfo.price * cartItems[item] : 0;
       }
     }
     return totalAmount;

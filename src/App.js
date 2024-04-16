@@ -13,6 +13,7 @@ import jewerybanner from "./components/ShopAssets/jewery_banner.png";
 import beautybanner from "./components/ShopAssets/beauty_banner.png";
 import ProfileDetails from "./pages/ProfileDetails";
 import Payment from "./pages/Payment";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/profile" element={<ProfileDetails />} />
           <Route path="*" element={<PageNotFound />} />

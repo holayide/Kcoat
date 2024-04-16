@@ -51,9 +51,9 @@ function MenuBar({ toggleMenu, isOpen }) {
   return (
     <div onClick={toggleMenu} className={style.menu}>
       {isOpen ? (
-        "❌"
+        <img src="../../assets/icons/cancel_menu.svg" alt="Cancel Menu" />
       ) : (
-        <img src="../../assets/icons/sidemenu.svg" alt="sidemenu" />
+        <img src="../../assets/icons/sidemenu.svg" alt="Main Menu" />
       )}
     </div>
   );

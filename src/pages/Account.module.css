@@ -6,14 +6,15 @@
 }
 
 .container {
-  margin: 33px 8% 0;
+  margin: 3rem 8% 0;
 }
 
 .forms {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 15%;
-  margin: 55px 0 60px;
+  margin: 4rem 0 5rem;
 }
 
 .heroHead {
@@ -55,17 +56,29 @@
   letter-spacing: 12px;
 }
 
-.container form > .checkbox {
+.checkforget {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.checkforget > .checkbox {
   display: flex;
   align-items: center;
   font-family: satoshi700;
   font-size: 0.8rem;
   gap: 0.3rem;
-  margin-bottom: 1rem;
 }
 
 .container form > .checkbox input:checked {
   accent-color: #000;
+}
+
+.forget a {
+  text-decoration: underline;
+  color: #000;
+  font-size: 0.7rem;
+  font-family: satoshi700;
 }
 
 .input img {
@@ -89,15 +102,18 @@
   background-color: #9856da;
 }
 
-.forget {
+.toSignup {
   margin-top: 1rem;
-}
 
-.forget a {
-  text-decoration: underline;
   color: #000;
   font-size: 0.7rem;
   font-family: satoshi700;
+}
+
+.toSignup a {
+  color: #9856da;
+  text-decoration: underline;
+  margin-left: 0.3rem;
 }
 
 /* media */
@@ -107,21 +123,12 @@
   }
 }
 
-@media (max-width: 700px) {
-  .container {
-    margin: 33px 8% 0;
-  }
-
-  .forms {
-    display: flex;
-    flex-direction: column;
-  }
-
+@media (max-width: 800px) {
   .container form {
     width: 100%;
   }
 
-  .forget {
-    margin-bottom: 3rem;
+  .forms {
+    margin: 4rem 0;
   }
 }

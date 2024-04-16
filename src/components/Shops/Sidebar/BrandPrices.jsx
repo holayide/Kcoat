@@ -78,12 +78,14 @@ export default function BrandPrices({ handleChange }) {
 
         <hr />
 
-        <h3>BY WEIGHT</h3>
+        <h3>BY SIZE</h3>
         <div className={style.weight}>
           {/* <Buttons value="" title="Body" /> */}
-          <Buttons value="neck" title="1kg" className={style.btnweight} />
-          <Buttons value="hand" title="0.5kg" className={style.btnweight} />
-          <Buttons value="lips" title="0.2kg" className={style.btnweight} />
+          <Buttons value="neck" title="S" className={style.btnweight} />
+          <Buttons value="hand" title="M" className={style.btnweight} />
+          <Buttons value="lips" title="L" className={style.btnweight} />
+          <Buttons value="lips" title="XL" className={style.btnweight} />
+          <Buttons value="lips" title="XXL" className={style.btnweight} />
         </div>
         <hr />
       </div>
