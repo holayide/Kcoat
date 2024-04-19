@@ -1,0 +1,365 @@
+.order__main {
+  width: 100%;
+  margin-right: 5rem;
+}
+
+.order_customerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.customer_input {
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+}
+
+.customer_input input {
+  padding: 0.1rem;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.customer_input input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.customer_input > img {
+  width: 0.8rem;
+}
+
+.order_head_left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.order_head_left > img {
+  width: 1.5rem;
+}
+
+.order_head_left .admin_info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #a2a2a2;
+  border-radius: 6.1px;
+}
+
+.order_head_left .admin_info > img:first-of-type {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid #8a8a8a;
+}
+
+.order_head_left .admin_info > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.65rem;
+}
+
+.order_head_left .admin_info > img:last-of-type {
+  width: 0.7rem;
+}
+
+/* order */
+.order_titles {
+  width: 100%;
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3edfb;
+  padding: 0.5rem 0.5rem;
+}
+
+.ordername h2 {
+  font-family: "Volkhov", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.ordername h2 span {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: satoshi400;
+  font-size: 0.7rem;
+}
+
+.order_download_area {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.order_date_dropdown {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.3rem;
+
+  background-color: #9856da;
+  border-radius: 8px;
+}
+
+.order_date_dropdown select {
+  border: none;
+  outline: none;
+  background-color: #9856da;
+  color: white;
+}
+
+.order__main .all__orders {
+  margin-top: 1rem;
+}
+
+.order__main .all__orders a {
+  margin-right: 2.5rem;
+  text-decoration: none;
+  color: black;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+.order__main .all__orders a:first-of-type {
+  border-bottom: 2px solid #9377be;
+}
+
+/* order heading */
+.order__proper {
+  padding: 1.5rem 0 0.5rem;
+  border-bottom: 1px solid rgba(162, 162, 162, 0.5);
+}
+
+.arrange__order {
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr 1fr 1fr 0.7fr 0.7fr 0.8fr;
+  gap: 0.5rem;
+
+  text-align: center;
+}
+
+.order__proper div {
+  color: #8a8a8a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* ordered product */
+.customer_show_order {
+  color: #8a8a8a;
+  font-family: "Poppins", sans-serif;
+  padding: 0.8rem 0;
+
+  border-bottom: 1px solid rgba(162, 162, 162, 0.5);
+}
+
+.customer_show_order > div:first-of-type {
+  width: 15px;
+  height: 15px;
+  border: 1.3px solid rgba(138, 138, 138, 0.5);
+  margin: 0 auto;
+}
+
+.customer_show_order .order__id {
+  font-size: 0.8rem;
+}
+
+.customer_show_order .product__info {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0 auto;
+}
+
+.product__img {
+  height: 4rem;
+}
+
+.product__img img,
+.customer__img img {
+  height: 100%;
+}
+
+.customer_show_order .product__title {
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+}
+
+.customer_show_order .customer {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0 auto;
+}
+
+.customer .customer__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #8a8a8a;
+}
+
+.customer .customer__name {
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.customer .customer__email {
+  font-size: 0.6rem;
+}
+
+.customer_show_order .customer__purchased__date,
+.customer_show_order .product__price {
+  font-size: 0.8rem;
+}
+
+.customer_show_order .order__status {
+  height: 30px;
+  margin: 0 0.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.7rem;
+  background-color: #ecfff6;
+  border-radius: 6.507px;
+  color: #7aaf96;
+}
+
+/* media */
+@media (min-width: 900px) and (max-width: 1030px) {
+  .order__main {
+    margin-right: 2rem;
+  }
+
+  .arrange__order {
+    gap: 0.3rem;
+  }
+
+  .order__proper div {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 900.1px) {
+  .order__proper {
+    display: none;
+  }
+
+  .arrange__order {
+    grid-template-columns: 0.1fr 0.5fr 1fr;
+    gap: 0.1rem;
+
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+
+  .customer_show_order > div:first-of-type,
+  .customer .customer__img {
+    display: none;
+  }
+
+  .product__img {
+    display: none;
+  }
+
+  .customer_show_order .product__title {
+    padding-top: 0rem;
+  }
+
+  .customer {
+    grid-row: span 2;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customer_show_order .order__status {
+    height: 25px;
+    margin: 0.3rem 0rem 0rem;
+
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .order__main {
+    margin-right: 2rem;
+  }
+
+  .customer_input {
+    width: 50%;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .customer_input input {
+    padding: 0rem;
+    width: 100%;
+  }
+
+  .customer_input input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .customer_input > img {
+    width: 0.6rem;
+  }
+
+  .order_head_left {
+    gap: 0.5rem;
+  }
+
+  .order_head_left > img {
+    width: 1.3rem;
+  }
+
+  .order_head_left .admin_info > img:first-of-type {
+    width: 20px;
+    height: 20px;
+  }
+
+  .order_head_left .admin_info > p {
+    font-size: 0.5rem;
+  }
+
+  .order_head_left .admin_info > img:last-of-type {
+    width: 0.5rem;
+  }
+
+  /* order */
+  .ordername h2 {
+    font-size: 1.3rem;
+  }
+
+  .ordername h2 span {
+    display: none;
+  }
+
+  .order_date_dropdown select {
+    font-size: 0.7rem;
+  }
+
+  .order_download_area img {
+    width: 1rem;
+  }
+
+  /* orders menu */
+  .order__main .all__orders a {
+    margin-right: 1.5rem;
+    font-size: 0.7rem;
+  }
+}

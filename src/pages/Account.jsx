@@ -4,6 +4,7 @@ import style from "./Account.module.css";
 import { useState } from "react";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
+import loginImg from "../../src/components/ShopAssets/login_img.jpg";
 
 export default function Account() {
   const [view, setView] = useState(false);
@@ -18,15 +19,15 @@ export default function Account() {
         <Header />
       </div>
       <div className={style.container}>
-        <h2 className={style.heroHead}>My account</h2>
         <div className={style.forms}>
-          {/* form1 */}
+          {/* form */}
           <form action="/#">
-            <h2 className={style.heroHead}>LOGIN</h2>
+            <h2>Welcome back!</h2>
+            <p>Enter your details to access your account</p>
             <div className={style.input}>
-              <label htmlFor="loginEmail">Email or username</label>
+              <label htmlFor="loginEmail">Email address</label>
               <input
-                type="text"
+                type="email"
                 id="loginEmail"
                 placeholder="abc123@gmail.com"
                 required
@@ -37,7 +38,7 @@ export default function Account() {
               <input
                 type={view ? "text" : "password"}
                 id="loginPword"
-                placeholder="......."
+                placeholder="Name"
                 required
               />
               <img
@@ -60,16 +61,23 @@ export default function Account() {
               </div>
             </div>
 
-            <div classname={style.acctBtn}>
-              <Link to="/Profile" className={style.tertiaryBtn}>
-                Login
-              </Link>
+            <Link to="/Profile" className={style.tertiaryBtn}>
+              <input type="submit" value="Login" />
+            </Link>
+
+            <div className={style.divider}>
+              <span>Or</span>
             </div>
 
             <div className={style.toSignup}>
-              Don't have an account yet? <Link to="/register">sign up </Link>
+              Don’t have an account? <Link to="/register">Register</Link>
             </div>
           </form>
+
+          {/* img */}
+          <div className={style.accountImg}>
+            <img src={loginImg} alt="Account" />
+          </div>
         </div>
       </div>
 

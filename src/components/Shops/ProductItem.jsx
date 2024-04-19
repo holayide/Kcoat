@@ -3,22 +3,30 @@ import { useContext } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import { Link } from "react-router-dom";
 import style from "./ProductItem.module.css";
+import { FavoriteContext } from "../../Context/WishContext";
 
 function ProductItem(props) {
   const { addToCart } = useContext(ShopContext);
+  const { addToFavorites } = useContext(FavoriteContext);
 
   return (
     <div className={style.items}>
       <div className={style.itemImage}>
         <Link to={`/product/${props.id}`}>
-          <img onClick={window.scrollTo(0, 0)} src={props.image} alt="images" />
+          <img src={props.image} alt="images" />
         </Link>
       </div>
 
       <div className={style.productText}>
         <div className={style.productName}>
           <p>{props.name}</p>
-          <img src={props.heart} alt="Heart" />
+          <div
+            onClick={() => {
+              addToFavorites(props.id);
+            }}
+          >
+            <img src={props.heart} alt="Heart" />
+          </div>
         </div>
 
         <div className={style.starImages}>

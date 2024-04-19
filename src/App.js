@@ -14,6 +14,9 @@ import beautybanner from "./components/ShopAssets/beauty_banner.png";
 import ProfileDetails from "./pages/ProfileDetails";
 import Payment from "./pages/Payment";
 import Register from "./pages/Register";
+import AdminDashboard from "./pages/AdminDashboard";
+import AdminOrders from "./components/Admin page/Admin_orders/AdminOrders";
+import WishList from "./pages/WishList";
 
 function App() {
   return (
@@ -40,6 +43,7 @@ function App() {
           <Route path="/product" element={<ProductDetails />}>
             <Route path=":productId" element={<ProductDetails />} />
           </Route>
+          <Route path="/wishlist" element={<WishList />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
@@ -47,6 +51,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/profile" element={<ProfileDetails />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/customerorder" element={<AdminOrders />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

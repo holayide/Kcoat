@@ -1,0 +1,143 @@
+.wishListItem {
+  margin: 3rem 5% 3rem;
+}
+
+.wishListItem h2 {
+  background-color: #eee7fa;
+  border-radius: 8px;
+  font-family: "Volkhov", serif;
+  font-size: 1.8rem;
+  padding: 10px 12px;
+}
+
+.wishitemsFormatMain {
+  display: grid;
+  grid-template-columns: 0.8fr 0.7fr 0.8fr 0.5fr 0.7fr 0.7fr 0.3fr;
+  align-items: center;
+
+  padding: 1.3rem 12px 0.7rem;
+  border-bottom: 1px solid rgba(162, 162, 162, 0.5);
+}
+
+.wishlistheader > p {
+  text-align: center;
+  color: #8a8a8a;
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+}
+
+.wishitemsFormat {
+  text-align: center;
+  color: #262626;
+  font-size: 0.8rem;
+  font-family: satoshi400;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(162, 162, 162, 0.5);
+}
+
+.ListProductImg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ListProductImg img {
+  height: 5rem;
+}
+
+.stockStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.stockStatus img {
+  width: 1rem;
+}
+
+.wishItemsQuantity {
+  width: 80%;
+  margin: auto;
+  padding: 0.5rem 0rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+
+  border-radius: 8px;
+  background-color: #eee7fa;
+  cursor: pointer;
+}
+
+.wishItemsQuantity > button {
+  border: none;
+  background-color: transparent;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.wishremove {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .wishListItem {
+    margin: 3rem 3% 3rem;
+  }
+
+  .wishItemsQuantity > button {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .wishListItem h2 {
+    font-size: 1.5rem;
+  }
+
+  .wishListItem {
+    margin: 3rem 3% 3rem;
+  }
+
+  .wishitemsFormat {
+    font-size: 0.7rem;
+  }
+
+  .wishlistheader > p {
+    font-size: 0.7rem;
+  }
+
+  .wishItemsQuantity img {
+    display: none;
+  }
+
+  .wishItemsQuantity > button {
+    font-size: 0.35rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .wishListItem h2 {
+    margin-bottom: 2rem;
+  }
+
+  .wishlistheader {
+    display: none;
+  }
+
+  .wishItemsQuantity > button {
+    font-size: 0.5rem;
+  }
+
+  .wishitemsFormatMain {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .ListProductImg {
+    grid-row: span 3;
+  }
+}

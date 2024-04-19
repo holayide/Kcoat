@@ -44,7 +44,7 @@ export const lists2 = [
     id: 2,
     iconimage: like,
     icontext: "Wish List",
-    goto: " ",
+    goto: "/wishlist",
   },
   {
     id: 3,

@@ -1,0 +1,232 @@
+.admin_main {
+  width: 100%;
+  margin: 0.8rem 3% 0 0;
+}
+
+.admin_main > h2 {
+  font-family: "Volkhov", serif;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+.admin_main .admin_dashboard {
+  display: flex;
+  gap: 1rem;
+}
+
+.total_transactions {
+  width: 55%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.admin_total_box {
+  padding: 15px 0 0 8px;
+
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.admin_total_box img {
+  width: 1.5rem;
+}
+
+.admin_total_box > p:first-of-type {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+
+  margin: 0.3rem 0;
+}
+
+.admin_total_box > p:last-of-type {
+  font-family: satoshi400;
+  font-size: 0.8rem;
+}
+
+.admin_total_box .view {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0.3rem 0 3rem;
+
+  font-size: 0.69rem;
+  font-family: satoshi400;
+}
+
+.admin_total_box .view > img {
+  width: 0.69rem;
+}
+
+/* Barcharts */
+.sales_activity {
+  width: 45%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px 8px 0;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.sales_activity h3 {
+  font-family: "Volkhov", serif;
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.admin_sales {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sales_year {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin_sales .this_year,
+.admin_sales .last_year {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.admin_sales .this_year > div,
+.admin_sales .last_year > div {
+  width: 12px;
+  height: 11px;
+}
+
+.admin_sales .this_year > div {
+  background-color: #3e6be0;
+}
+
+.admin_sales .last_year > div {
+  background-color: #e0e0e0;
+}
+
+.admin_sales .this_year > p,
+.admin_sales .last_year > p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.5rem;
+}
+
+.barchart {
+  width: 95%;
+  height: 30vh;
+}
+
+/* tables */
+.admin_main .orders {
+  margin: 3rem 0;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.orders .recent_orders {
+  width: 55%;
+  border-radius: 7px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.orders .top_selling_products {
+  width: 45%;
+  border-radius: 7px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.orders h3 {
+  padding: 0.5rem 0.5rem 0.5rem;
+  font-family: "Volkhov", serif;
+  font-size: 1rem;
+}
+
+.admin_main .orders .order_table .items {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 0.7fr;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.admin_main .orders .top_selling_table .items {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.recent_orders_header,
+.top_selling_header {
+  background-color: #f3edfb;
+  font-family: satoshi700;
+  font-weight: bold;
+}
+
+.admin_main .orders .items {
+  font-family: satoshi400;
+  font-size: 0.85rem;
+}
+
+/* media  1090px*/
+@media (min-width: 1300px) {
+  .admin_main {
+    margin: 0.5rem 5% 0 0;
+  }
+
+  .admin_main .orders .items {
+    font-family: satoshi400;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1090px) {
+  .admin_main .admin_dashboard {
+    flex-direction: column;
+  }
+
+  .total_transactions,
+  .sales_activity,
+  .orders .recent_orders,
+  .orders .top_selling_products {
+    width: 100%;
+  }
+
+  .sales_activity {
+    text-align: center;
+  }
+
+  .sales_year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .admin_main .orders {
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+
+  .admin_main .orders .items {
+    font-size: 0.9rem;
+  }
+}
+
+/* mobile */
+/* @media (max-width: 720px) {
+  .admin_main .admin_dashboard {
+    background-color: brown;
+  }
+} */

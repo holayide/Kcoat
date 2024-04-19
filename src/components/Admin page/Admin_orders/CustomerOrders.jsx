@@ -1,0 +1,90 @@
+import bell from "../../ShopAssets/Admin assets/bell.png";
+import adminImg from "../../ShopAssets/Admin assets/admincustomer.svg";
+import dropdown from "../../ShopAssets/Admin assets/arrowDown.svg";
+import calender from "../../ShopAssets/Admin assets/calendarad.svg";
+import download from "../../ShopAssets/Admin assets/download.svg";
+import haute from "../../ShopAssets/Haute Couture.svg";
+import { Link } from "react-router-dom";
+import "./CustomerOrders.css";
+
+export default function CustomerOrders() {
+  return (
+    <div className="order__main">
+      <div className="order_customerInfo">
+        <div className="customer_input">
+          <input type="text" placeholder="search product" />
+          <img src="../../../../assets/icons/search.svg" alt="Search bar" />
+        </div>
+        <div className="order_head_left">
+          <img src={bell} alt="Bell" />
+          <div className="admin_info">
+            <img src={adminImg} alt="adminImg" />
+            <p>Sarah oni</p>
+            <img src={dropdown} alt="dropdown" />
+          </div>
+        </div>
+      </div>
+
+      <div className="order_titles">
+        <div className="ordername">
+          <h2>
+            Order <span>15 orders found</span>
+          </h2>
+        </div>
+        <div className="order_download_area">
+          <div className="order_date_dropdown">
+            <img src={calender} alt="march" />
+            <select id="order">
+              <option value="mar">Mar - April, 2024</option>
+              <option value="mar">May - June, 2024</option>
+              <option value="mar">July - Aug, 2024</option>
+              <option value="mar">Sept- October, 2024</option>
+              <option value="mar">Nov - Dec, 2024</option>
+            </select>
+          </div>
+          <img src={download} alt="download " />
+        </div>
+      </div>
+      <div className="all__orders">
+        <Link>All orders</Link>
+        <Link>Completed</Link>
+        <Link>Pending</Link>
+        <Link>Cancel</Link>
+      </div>
+
+      <div className="order__proper arrange__order">
+        <div>#</div>
+        <div>Order ID</div>
+        <div>Product Name</div>
+        <div>Customer</div>
+        <div>Date</div>
+        <div>Price</div>
+        <div>status</div>
+      </div>
+
+      <div className="customer_show_order arrange__order">
+        <div></div>
+        <div className="order__id">#4376</div>
+        <div className="product__info">
+          <div className="product__img">
+            <img src={haute} alt="Haute couture" />
+          </div>
+          <div className="product__title">Haute couture</div>
+        </div>
+        <div className="customer">
+          <div className="customer__img">
+            <img src={adminImg} alt="Customer" />
+          </div>
+          <div>
+            <div className="customer__name">Tolani Oyebanji</div>
+            <div className="customer__email">Tolani23@gmail.com</div>
+          </div>
+        </div>
+        <div className="customer__purchased__date">22/03/2024</div>
+        <div className="product__price">#12,000</div>
+        <div className="order__status">Complete</div>
+      </div>
+      {/* end */}
+    </div>
+  );
+}

@@ -6,28 +6,31 @@
 }
 
 .container {
-  margin: 3rem 8% 0;
+  margin: 2rem 0 3rem;
 }
 
 .forms {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15%;
-  margin: 4rem 0 5rem;
-}
+  justify-content: space-between;
 
-.heroHead {
-  font-family: var(--font-vol);
-  font-size: 1.875rem;
-}
-
-.forms .heroHead {
-  margin-bottom: 15px;
+  height: calc(100vh - 100px);
 }
 
 .container form {
   width: 50%;
+  margin: 4% 10% 5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+form > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+form > p {
+  font-size: 0.8rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
 }
 
 .container form .input {
@@ -38,22 +41,32 @@
 }
 
 .container form .input label {
-  font-family: satoshi700;
   font-size: 0.8rem;
-  margin-bottom: 0.3rem;
+  font-weight: 500;
 }
 
 .container form .input input {
-  border: 1px solid #252525;
-  padding: 1em;
+  border: 1.146px solid #d9d9d9;
+  padding: 0.8rem 1em;
   border-radius: 8px;
   font-size: 0.85rem;
   outline: none;
 }
 
-.container form .input input[type="password"]::placeholder {
-  font-size: 1.3rem;
-  letter-spacing: 12px;
+.input img {
+  width: 1.5rem;
+  position: absolute;
+  right: 15px;
+  top: 28px;
+}
+
+.container form .input input[type="text"]::placeholder,
+.container form .input input[type="password"]::placeholder,
+.container form .input input[type="email"]::placeholder {
+  color: #d9d9d9;
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .checkforget {
@@ -65,9 +78,9 @@
 .checkforget > .checkbox {
   display: flex;
   align-items: center;
-  font-family: satoshi700;
-  font-size: 0.8rem;
-  gap: 0.3rem;
+  font-size: 0.7rem;
+  gap: 0.2rem;
+  font-weight: 500;
 }
 
 .container form > .checkbox input:checked {
@@ -75,60 +88,86 @@
 }
 
 .forget a {
-  text-decoration: underline;
-  color: #000;
-  font-size: 0.7rem;
-  font-family: satoshi700;
+  color: #0c2a92;
+  font-size: 0.65rem;
+  font-weight: 500;
 }
 
-.input img {
-  width: 1.5rem;
-  position: absolute;
-  right: 15px;
-  top: 32px;
-}
-
-.tertiaryBtn {
-  padding: 8.5px 30px;
-  color: #ffff;
-  margin-top: 2em;
-  border-radius: 8px;
+.tertiaryBtn input {
+  width: 100%;
   background: #cfb9f0;
-  font-size: 0.7rem;
-  font-family: satoshi400;
+  color: #fff;
+  padding: 0.7rem 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.tertiaryBtn:hover {
+.tertiaryBtn input:hover {
   background-color: #9856da;
 }
 
-.toSignup {
-  margin-top: 1rem;
+.divider {
+  border: 1px solid #f5f5f5;
+  text-align: center;
+  line-height: 0;
 
-  color: #000;
+  margin: 1.5rem 0;
+  font-size: 0.65rem;
+}
+
+.divider span {
+  background-color: white;
+  padding: 0 10px;
+}
+
+.toSignup {
   font-size: 0.7rem;
-  font-family: satoshi700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
 }
 
 .toSignup a {
-  color: #9856da;
-  text-decoration: underline;
+  color: #0c2a92;
   margin-left: 0.3rem;
 }
 
+.accountImg {
+  width: 90%;
+}
+
+.accountImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 45px 0px 0px 45px;
+}
+
 /* media */
-@media (min-width: 1100px) {
-  .container {
-    margin: 33px 15% 0;
+@media (min-width: 700px) and (max-width: 1000px) {
+  .container form {
+    margin: 4% 4% 5rem;
+  }
+
+  .accountImg {
+    width: 70%;
   }
 }
 
-@media (max-width: 800px) {
-  .container form {
-    width: 100%;
+@media (max-width: 700px) {
+  .forms {
+    height: auto;
   }
 
-  .forms {
-    margin: 4rem 0;
+  .container form {
+    width: 100%;
+    margin: auto;
+    margin: 1rem 10% 0;
+  }
+
+  .accountImg {
+    display: none;
   }
 }
