@@ -1,0 +1,52 @@
+.billingdetailsContainer {
+  width: 50%;
+  border: 1px solid blue;
+  padding: 1rem 1rem 0;
+}
+
+.billingdetailsContainer .billingdetails {
+  /* border: 1px solid black; */
+  font-family: satoshi700;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.billingdetailsContainer > p,
+.billingdetailsContainer .warning {
+  width: 50%;
+
+  font-family: satoshi400;
+  font-size: 0.8rem;
+}
+
+.billingdetailsContainer > p {
+  border: 1px solid red;
+}
+
+.billingdetailsContainer .warning {
+  border: 1px solid green;
+  margin: 1rem 0;
+  padding: 0.5rem;
+
+  text-align: center;
+  background-color: #f8ddd4;
+  color: #602e1f;
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+}
+
+/* place order */
+/* .banktransfer .placeorder {
+    border: 1px solid red;
+    width: 80%;
+    margin: 1rem auto 0;
+    padding: 0.8rem;
+    background-color: #292d32;
+  }
+  
+  .banktransfer .placeorder a {
+    color: #fff; font-family: "Volkhov", serif;
+    font-size: 0.8rem;
+  }
+   */

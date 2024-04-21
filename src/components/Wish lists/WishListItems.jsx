@@ -40,7 +40,7 @@ export default function WishListItems() {
 
                 <p>Medium</p>
                 <p>{e.category} category</p>
-                <p>${e.price}</p>
+                <p>₦{e.price}</p>
                 <div className={style.stockStatus}>
                   <img src={stockStatus} alt="Stock Status" />
                   <p>In Stock</p>

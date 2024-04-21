@@ -1,0 +1,141 @@
+.order_customerInfo {
+  width: 100%;
+  height: 60px;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customer_input {
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.customer_input input {
+  padding: 0.1rem;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.customer_input input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.customer_input > img {
+  width: 0.8rem;
+}
+
+.admin_left_header {
+  display: flex;
+  align-items: center; /* opt to change */
+  gap: 0.8rem;
+}
+
+.admin_left_header .current_date {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.order_head_left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.order_head_left > img {
+  width: 1.5rem;
+}
+
+.order_head_left .admin_info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #a2a2a2;
+  border-radius: 6.1px;
+}
+
+.order_head_left .admin_info > img:first-of-type {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid #8a8a8a;
+}
+
+.order_head_left .admin_info > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.65rem;
+}
+
+.order_head_left .admin_info > img:last-of-type {
+  width: 0.7rem;
+}
+
+/* media */
+@media (min-width: 530px) and (max-width: 800px) {
+  .order_customerInfo {
+    padding: 0 3%;
+  }
+
+  .customer_input {
+    width: 30%;
+    padding: 0.5rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .customer_input input {
+    width: 100%;
+    padding: 0.1rem;
+  }
+}
+
+@media (max-width: 529.9px) {
+  .order_customerInfo {
+    padding: 0 3%;
+  }
+
+  .customer_input {
+    width: 30%;
+    padding: 0.3rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .customer_input input {
+    width: 100%;
+  }
+
+  .admin_left_header {
+    gap: 0.3rem;
+  }
+
+  .admin_left_header .current_date {
+    font-size: 0.6rem;
+  }
+
+  .order_head_left > img,
+  .order_head_left .admin_info > img:last-of-type {
+    display: none;
+  }
+
+  .order_head_left .admin_info > img:first-of-type {
+    width: 20px;
+    height: 20px;
+  }
+
+  .order_head_left .admin_info > p {
+    font-size: 0.6rem;
+  }
+}

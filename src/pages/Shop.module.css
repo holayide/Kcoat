@@ -7,7 +7,6 @@
 }
 
 .shop {
-  /* border: 1px solid red; */
   margin: 25px 7% 40px;
   display: flex;
   gap: 3%;
@@ -15,7 +14,7 @@
 
 @media (min-width: 1000px) {
   .banner img {
-    height: 58vh; /* height issue  */
+    height: 58vh;
   }
   .shop {
     margin: 25px 9% 40px;
@@ -24,14 +23,12 @@
 
 @media (max-width: 1200px) {
   .shop {
-    /* border: 1px solid blue; */
     margin: 25px 3% 40px;
   }
 }
 
 @media (max-width: 659.9px) {
   .shop {
-    /* border: 1px solid pink; */
     margin: 25px 3% 40px;
     display: flex;
     flex-direction: column;

@@ -17,6 +17,10 @@ import Register from "./pages/Register";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminOrders from "./components/Admin page/Admin_orders/AdminOrders";
 import WishList from "./pages/WishList";
+import ProductInventory from "./components/Admin page/Product inventory/ProductInventory";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AdminCustomer from "./components/Admin page/DashBoard/AdminCustomer";
 
 function App() {
   return (
@@ -53,9 +57,12 @@ function App() {
           <Route path="/profile" element={<ProfileDetails />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/customerorder" element={<AdminOrders />} />
+          <Route path="/productInventory" element={<ProductInventory />} />
+          <Route path="/admincustomerpage" element={<AdminCustomer />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer position="top-center" theme="colored" />
     </>
   );
 }

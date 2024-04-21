@@ -93,7 +93,8 @@ form > p {
   font-weight: 500;
 }
 
-.tertiaryBtn input {
+.container .tertiaryBtn {
+  border: 1px solid red;
   width: 100%;
   background: #cfb9f0;
   color: #fff;
@@ -103,7 +104,7 @@ form > p {
   cursor: pointer;
 }
 
-.tertiaryBtn input:hover {
+.tertiaryBtn:hover {
   background-color: #9856da;
 }
 

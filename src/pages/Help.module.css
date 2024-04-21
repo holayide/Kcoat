@@ -1,3 +1,22 @@
+.helpContainer {
+  position: relative;
+}
+
+.whatsappLogo {
+  position: fixed;
+  right: 5%;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #eee7fa;
+}
+
 .helpHero {
   background-image: url("../../public/assets/help.jpg");
   width: 100%;

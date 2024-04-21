@@ -1,6 +1,7 @@
 .wrapper {
   text-align: center;
   margin: 0 1rem;
+  position: relative;
 }
 
 .wrapper h4 {
@@ -58,6 +59,13 @@
 
 .wrapper input[type="submit"]:hover {
   background-color: #5028c6;
+}
+
+.arrowupImg {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+  cursor: pointer;
 }
 
 @media (min-width: 701.9px) and (max-width: 1000px) {
