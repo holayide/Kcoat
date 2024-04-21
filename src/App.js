@@ -55,6 +55,10 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/customerorder" element={<AdminOrders />} />
+          <Route path="/productInventory" element={<ProductInventory />} />
+          <Route path="/admincustomerpage" element={<AdminCustomer />} />
           <Route path="/account" element={<Account />} />
           <Route path="/register" element={<Register />} />
           <Route path="/payment" element={<Payment />} />
