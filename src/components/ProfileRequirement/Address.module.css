@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 989px;
+  margin: 6% auto;
+  padding: 20px;
+  background-color: #EEE7FA;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.backArrow {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #EEE7FA;
+}
+
+.inputRow,
+.selectRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  background-color: #EEE7FA;
+}
+
+.inputHalf {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #A2A2A2;
+  border-radius: 4px;
+  background-color: #EEE7FA;
+}
+
+.inputFull,
+.textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #A2A2A2;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  background-color: #EEE7FA;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.selectHalf {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #A2A2A2;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #EEE7FA;
+
+}
+
+.saveButton {
+  width: 100px;
+  padding: 1rem;
+  background-color: #b19cd9;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 16px;
+  float: right;
+}
+
+/* Responsive design  */
+@media (max-width: 768px) {
+
+  .inputRow,
+  .selectRow {
+    flex-direction: column;
+  }
+
+  .inputHalf,
+  .selectHalf {
+    width: 100%;
+  }
+}

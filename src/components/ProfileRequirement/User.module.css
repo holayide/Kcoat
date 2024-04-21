@@ -1,0 +1,30 @@
+.MainContent {
+  padding: 1.5rem;
+  background-color: #EEE7FA;
+  margin-left: 2rem;
+  width: 915px;
+  height: 864px;
+  flex-shrink: 0;
+  border: 1px solid red;
+}
+
+.MainContent h1 {
+  margin-bottom: 1%;
+}
+
+.MainContent h3 {
+  margin-bottom: 2%;
+}
+
+.PersonalInfo .detail {
+  background-color: #EEE7FA;
+  margin-bottom: 1%;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.PersonalInfo .detail span {
+  color: #000;
+  display: block;
+  margin-bottom: 1%;
+}
