@@ -12,6 +12,10 @@ import menbanner from "./components/ShopAssets/men_banner.png";
 import jewerybanner from "./components/ShopAssets/jewery_banner.png";
 import beautybanner from "./components/ShopAssets/beauty_banner.png";
 import ProfileDetails from "./pages/ProfileDetails";
+import UserProfile from "./components/ProfileRequirement/UserProfile";
+import Address from "./components/ProfileRequirement/Address";
+import Order from "./components/ProfileRequirement/Order";
+import General from "./components/ProfileRequirement/General";
 import Payment from "./pages/Payment";
 import Register from "./pages/Register";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -51,14 +55,18 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/profile" element={<ProfileDetails />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/customerorder" element={<AdminOrders />} />
           <Route path="/productInventory" element={<ProductInventory />} />
           <Route path="/admincustomerpage" element={<AdminCustomer />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<ProfileDetails />} />
+          <Route path="/UserProfile" element={<UserProfile />} />
+          <Route path="/Order" element={<Order />} />
+          <Route path="/Address" element={<Address />} />
+          <Route path="/General" element={<General />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
