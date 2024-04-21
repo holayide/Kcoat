@@ -1,0 +1,213 @@
+.productListing {
+  width: 100%;
+}
+
+.productlistingHeader {
+  padding: 1rem;
+  background: #ccdbf8;
+
+  min-height: calc(100vh - 60px);
+}
+
+.productlistingHeader h2 {
+  font-family: "Volkhov", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.productlistingHeader .inventoryBoxes {
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.2rem 0.7rem 1rem;
+
+  border-radius: 6.054px;
+  background: #fff;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
+}
+
+.inventoryBoxes .box {
+  text-align: center;
+}
+
+.inventoryBoxes .boxLines {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+
+.inventoryBoxes .box h4 {
+  color: #8a8a8a;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.inventoryBoxes .box p {
+  font-family: "Volkhov", serif;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.productlistingHeader .inventoryDetails {
+  min-height: 100vh;
+  margin-top: 3rem;
+
+  border-radius: 6.054px;
+  background: #fff;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* big box */
+.inventoryDetails .inventoryCategories {
+  padding: 1rem 0.8rem 0.8rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inventoryCategories .inventoryCategoriesboxes {
+  display: flex;
+  gap: 0.8rem;
+  border: 1px solid blueviolet;
+}
+
+.inventoryCategoriesboxes .inventorymenus {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 6.1px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #fff;
+  padding: 0.3rem 0.5rem;
+}
+
+.inventorymenus > p {
+  color: #292d32;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.inventorymenus img {
+  width: 0.7rem;
+}
+
+.addproduct {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 8px;
+
+  background: #4f80e1;
+  padding: 0.5rem;
+}
+
+.addproduct img {
+  width: 1.3rem;
+}
+
+.addproduct p {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* header list */
+.listItems {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.listitemsheader {
+  display: grid;
+  grid-template-columns: 0.2fr 1.2fr 1fr 0.8fr 0.5fr 0.5fr 0.8fr 0.8fr 0.5fr;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.listitemsheaderitems {
+  padding: 0.8rem 0.7rem;
+  background-color: #8eb5f1;
+  color: #fff;
+  font-family: satoshi400;
+  font-size: 0.8rem;
+}
+
+.listItems .smallbox,
+.listInventoryProducts .listing {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.listInventoryProducts {
+  padding: 0.3rem 0;
+  margin: 0 0.7rem;
+
+  color: #8a8a8a;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.listInventoryProducts .productname {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.listInventoryProducts .productname img {
+  height: 4rem;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .listitemsheaderitems {
+    background-color: red;
+  }
+
+  .listInventoryProducts {
+    border: 1px solid blue;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899.9px) {
+  .listitemsheaderitems {
+    background-color: blue;
+  }
+
+  .listInventoryProducts {
+    border: 1px solid red;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .listInventoryProducts .productname img {
+    display: none;
+  }
+}
+
+@media (max-width: 599.9px) {
+  .addproduct {
+    gap: 0.3rem;
+    padding: 0.3rem 1rem;
+    width: 50%;
+  }
+
+  .addproduct img {
+    width: 1rem;
+  }
+
+  .addproduct p {
+    font-size: 0.7rem;
+  }
+
+  .inventoryCategoriesboxes {
+    visibility: hidden;
+  }
+}

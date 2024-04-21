@@ -7,6 +7,11 @@
 }
 
 @font-face {
+  font-family: satoshi500;
+  src: url("./satoshi-fonts/Satoshi-Medium.ttf");
+}
+
+@font-face {
   font-family: satoshi700;
   src: url("./satoshi-fonts/Satoshi-Bold.ttf");
 }

@@ -1,0 +1,7 @@
+.customer_orders {
+  min-height: 100vh;
+}
+
+.orders_main {
+  display: flex;
+}

@@ -12,10 +12,10 @@ export default function Footer() {
           <ul>
             <li className={style.listHead}>Contact us</li>
             <li>
-              <a href="#/">+23480******</a>
+              <a href="#/">08105020473</a>
             </li>
             <li>
-              <a href="#/">Email: support@email.com</a>
+              <a href="#/">christianabennet@gmail.com</a>
             </li>
           </ul>
         </div>

@@ -1,0 +1,129 @@
+.transferWrapper {
+  border: 1px solid red;
+  width: 50%;
+}
+
+.transferWrapper .deliverydetails {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 70%;
+  padding: 1rem;
+  background-color: #1e1e1e;
+}
+
+.transferWrapper .deliverydetails p {
+  font-family: "Volkhov", serif;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.transferWrapper .itemsPurchased {
+  /* border: 1px solid green; */
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  padding-bottom: 0.8rem;
+  border-radius: 6.054px;
+  background: #fff;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
+  /* justify-content: space-between; */
+}
+
+.itemsPurchased h3 {
+  background-color: #eee7fa;
+  padding: 1.1rem 1rem;
+  font-family: satoshi700;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.itemsPurchased p {
+  /* border: 1px solid blue; */
+  font-family: satoshi500;
+  font-size: 0.8rem;
+  padding: 0.8rem 1rem;
+}
+
+/* total */
+.transferWrapper .totalpayment {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0;
+  padding: 1.2rem;
+
+  border-radius: 6.054px;
+  background: #fff;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
+}
+
+.transferWrapper .subtotalpay,
+.transferWrapper .totalpay {
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.transferWrapper .subtotalpay p,
+.transferWrapper .totalpay p {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  font-family: satoshi500;
+  font-size: 0.8rem;
+}
+
+.transferWrapper .totalpay p:last-of-type {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* transfer */
+.banktransfer {
+  text-align: center;
+  padding: 1.1rem 0 0.8rem;
+
+  border-radius: 6.054px;
+  background: #eee7fa;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
+}
+
+.banktransfer .paymentMent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  /* border: 1px solid brown; */
+  width: 80%;
+  margin: auto;
+
+  font-family: "Volkhov", serif;
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.banktransfer .ubaLogo {
+  /* border: 1px solid green; */
+  display: inline-block;
+  margin: 1.3rem 0;
+
+  border-radius: 1.421px;
+  background: var(--White, #fff);
+  box-shadow: 0px 9.15px 18.3px -4.575px rgba(51, 43, 36, 0.08);
+}
+
+.banktransfer .ubaLogo img {
+  width: 100%;
+}
+
+.banktransfer .accountDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  font-family: "Volkhov", serif;
+  font-size: 0.8rem;
+  /* border: 1px solid green; */
+}

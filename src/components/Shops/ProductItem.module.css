@@ -39,6 +39,14 @@
   color: #262626;
 }
 
+.productName > div {
+  cursor: pointer;
+}
+
+.productName > div:hover {
+  opacity: 0.5;
+}
+
 .productText .starImages {
   margin: 15px 0 10px;
 }

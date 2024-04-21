@@ -5,10 +5,12 @@ import { Qcards } from "../utilities/helpSession";
 import { QuestionCards } from "../components/Questions";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
+import whatsappLogo from "../components/ShopAssets/whatsApp.svg";
+import { Link } from "react-router-dom";
 
 export default function Help() {
   return (
-    <div>
+    <div className={style.helpContainer}>
       <Header />
       <div className={style.helpHero}>
         <div className={style.innerHelpHero}>
@@ -19,6 +21,13 @@ export default function Help() {
       <div className={style.borderLine}>
         <PremierService />
       </div>
+      {/* working */}
+      <div className={style.whatsappLogo}>
+        <Link to="https:wa.me/2348105020473">
+          <img src={whatsappLogo} alt="WhatsappLogo" />
+        </Link>
+      </div>
+      {/* stop */}
       <div className={style.QAsession}>
         {Qcards.map((qcard) => {
           return (

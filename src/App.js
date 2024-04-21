@@ -18,6 +18,13 @@ import Order from "./components/ProfileRequirement/Order";
 import General from "./components/ProfileRequirement/General";
 import Payment from "./pages/Payment";
 import Register from "./pages/Register";
+import AdminDashboard from "./pages/AdminDashboard";
+import AdminOrders from "./components/Admin page/Admin_orders/AdminOrders";
+import WishList from "./pages/WishList";
+import ProductInventory from "./components/Admin page/Product inventory/ProductInventory";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AdminCustomer from "./components/Admin page/DashBoard/AdminCustomer";
 
 function App() {
   return (
@@ -44,6 +51,7 @@ function App() {
           <Route path="/product" element={<ProductDetails />}>
             <Route path=":productId" element={<ProductDetails />} />
           </Route>
+          <Route path="/wishlist" element={<WishList />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
@@ -58,6 +66,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer position="top-center" theme="colored" />
     </>
   );
 }
