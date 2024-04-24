@@ -93,7 +93,6 @@ export default function Account() {
         // clear input{not working}
         setEmail("");
         setPassword("");
-        setIsLoading(false);
 
         toast.error(error.message || "Wrong Email / Password");
       })

@@ -45,8 +45,8 @@ export default function BillingDetails({ onClick }) {
       <div className={style.checklogin}>
         <div></div>
         <div>
-          Don’t have an account? click <Link>register</Link> to create an
-          account and have access to place your orders
+          Don’t have an account? click <Link to="/register">register</Link> to
+          create an account and have access to place your orders
         </div>
       </div>
     </div>

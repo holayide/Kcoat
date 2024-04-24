@@ -14,6 +14,7 @@ export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   // new
   const [isRegister, setIsRegister] = useState(false);
 
@@ -56,6 +57,7 @@ export default function Register() {
 
     // new
     setIsRegister(true);
+    setIsLoading(true);
 
     // username: email
     const payload = { username: name, email, password };
@@ -76,6 +78,7 @@ export default function Register() {
         // clear input{not working}
         setEmail("");
         setPassword("");
+        setIsLoading(false);
 
         // Go back to the previous page
         response && navigate("/account");
@@ -100,6 +103,9 @@ export default function Register() {
         <div className={style.forms}>
           {/* form2 onSubmit={handleSubmit}*/}
           <form onSubmit={handleRegister} disabled={isRegister}>
+            <div className={style.loading}>
+              {isLoading && <div>Loading...</div>}
+            </div>
             <h2>Register</h2>
             <p>Enter your details to create an account</p>
             <div className={style.input}>

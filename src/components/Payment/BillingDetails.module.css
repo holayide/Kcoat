@@ -95,6 +95,7 @@
   font-size: 0.75rem;
 }
 
+/* media */
 @media (max-width: 900px) {
   .billingdetailsContainer {
     width: 100%;
@@ -103,5 +104,14 @@
   .billingdetailsContainer > p,
   .billingdetailsContainer .warning {
     width: 70%;
+  }
+
+  /* create account */
+  .checklogin {
+    padding-bottom: 0.5rem;
+  }
+
+  .checklogin > div:first-of-type {
+    display: none;
   }
 }
