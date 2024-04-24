@@ -77,7 +77,7 @@ function ArrivalCard({ image, title, description, arrivalAmt, love }) {
     <div className={style.arrivalCard}>
       <div className={style.imagecontainer}>
         <div className={style.arrivalImage}>
-          <img src={image} alt={title} />
+          <img src={image} alt={title} loading="lazy" />
         </div>
         <img src={love} alt="love" className={style.loves} />
       </div>
@@ -103,7 +103,11 @@ function ArrivalCard({ image, title, description, arrivalAmt, love }) {
 
           <div className={style.btnCart}>
             <div className={style.cart}>
-              <img src="../../assets/icons/minicart.svg" alt="mini cart" />
+              <img
+                src="../../assets/icons/minicart.svg"
+                alt="mini cart"
+                loading="lazy"
+              />
             </div>
             <div>
               <Button goto="./#" classname={style.primaryBtn}>

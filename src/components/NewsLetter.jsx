@@ -29,6 +29,7 @@ export default function NewsLetter() {
           src={arrowup}
           alt="arrowup"
           onClick={() => window.scrollTo(0, 0)}
+          loading="lazy"
         />
       </div>
     </div>

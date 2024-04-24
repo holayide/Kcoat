@@ -35,6 +35,7 @@ export default function WishListItems() {
                     src={e.image}
                     alt="person"
                     className={style.wishIconProductIcon}
+                    loading="lazy"
                   />
                 </div>
 
@@ -47,7 +48,11 @@ export default function WishListItems() {
                 </div>
 
                 <div className={style.wishItemsQuantity}>
-                  <img src="../../assets/icons/minicart.svg" alt="mini cart" />
+                  <img
+                    src="../../assets/icons/minicart.svg"
+                    alt="mini cart"
+                    loading="lazy"
+                  />
                   <button>ADD TO CART</button>
                 </div>
 

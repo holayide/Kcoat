@@ -1,5 +1,6 @@
 import { Logo } from "./Header";
 import style from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -12,10 +13,10 @@ export default function Footer() {
           <ul>
             <li className={style.listHead}>Contact us</li>
             <li>
-              <a href="#/">08105020473</a>
+              <Link>08105020473</Link>
             </li>
             <li>
-              <a href="#/">christianabennet@gmail.com</a>
+              <Link>christianabennet@gmail.com</Link>
             </li>
           </ul>
         </div>
@@ -25,16 +26,16 @@ export default function Footer() {
           <ul>
             <li className={style.listHead}>Explore</li>
             <li>
-              <a href="#/">Product</a>
+              <Link to="/women">Product</Link>
             </li>
             <li>
-              <a href="#/">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#/">Account</a>
+              <Link to="/account">Account</Link>
             </li>
             <li>
-              <a href="#/">Reviews</a>
+              <Link to="#/">Reviews</Link>
             </li>
           </ul>
         </div>
@@ -44,16 +45,16 @@ export default function Footer() {
           <ul className={style.listHead}>
             <li>Get Help</li>
             <li>
-              <a href="#/">FAQ</a>
+              <Link to="/help">FAQ</Link>
             </li>
             <li>
-              <a href="#/">Shipping</a>
+              <Link to="#/">Shipping</Link>
             </li>
             <li>
-              <a href="#/">Payment </a>
+              <Link to="/payment">Payment </Link>
             </li>
             <li>
-              <a href="#/">Returns</a>
+              <Link to="#/">Returns</Link>
             </li>
           </ul>
         </div>
@@ -61,7 +62,11 @@ export default function Footer() {
       <hr />
 
       <div className={style.copyright}>
-        <img src="../../assets/icons/copyright.svg" alt="Copy right" />
+        <img
+          src="../../assets/icons/copyright.svg"
+          alt="Copy right"
+          loading="lazy"
+        />
         <p>2024 KCOAT. All Rights Reserved</p>
       </div>
     </div>

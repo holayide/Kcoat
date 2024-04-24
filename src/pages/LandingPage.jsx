@@ -9,10 +9,10 @@ import CustomersReview from "../components/CustomersReview";
 import NewsLetter from "../components/NewsLetter";
 import Footer from "../components/Footer";
 
-export default function LandingPage() {
+export default function LandingPage({ isLogin }) {
   return (
     <>
-      <Header />
+      <Header isLogin={isLogin} />
       <HeroPage />
       <PremierService />
       <Preorder />
@@ -22,7 +22,6 @@ export default function LandingPage() {
       <CustomersReview />
       <NewsLetter />
       <Footer />
-
     </>
   );
 }

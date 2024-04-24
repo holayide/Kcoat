@@ -25,7 +25,7 @@ export default function ShopPage({ banner, category }) {
     <div>
       <Header />
       <div className={style.banner}>
-        <img src={banner} alt="Banner" />
+        <img src={banner} alt="Banner" loading="lazy" />
       </div>
       <SortBy />
 

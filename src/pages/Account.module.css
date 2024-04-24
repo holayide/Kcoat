@@ -5,6 +5,12 @@
   z-index: 1;
 }
 
+.loading {
+  font-style: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(241, 23, 23);
+}
+
 .container {
   margin: 2rem 0 3rem;
 }

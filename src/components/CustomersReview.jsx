@@ -40,6 +40,7 @@ function Customer({ profileImg, name, children }) {
           key={index}
           src="../../assets/icons/yellow-star.svg"
           alt="full star"
+          loading="lazy"
         />
       ))}
       <p>{children}</p>
@@ -56,7 +57,7 @@ function Customer({ profileImg, name, children }) {
 function Next() {
   return (
     <div className={style.next}>
-      <img src="../../assets/Arrows.svg" alt="Next" />
+      <img src="../../assets/Arrows.svg" alt="Next" loading="lazy" />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../ProfileRequirement/SideBar";
+// import Sidebar from "../ProfileRequirement/SideBar";
 import NewsLetter from "../../components/NewsLetter";
 import Footer from "../../components/Footer";
 import Styles from "./Order.module.css";

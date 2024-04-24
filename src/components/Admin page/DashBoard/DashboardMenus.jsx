@@ -21,16 +21,16 @@ export default function DashboardMenus() {
       <ul>
         <li
           onClick={() => {
-            setActiveMenu("dashbord");
+            setActiveMenu("dashboard");
           }}
           className={
-            activeMenu === "dashbord" || location.pathname === "/admin"
+            activeMenu === "dashboard" || location.pathname === "/dashboard"
               ? "clickedMenu"
               : "unclickMenu"
           }
         >
-          <Link to="/admin">
-            <img src={dashbord} alt="dashbord" />
+          <Link to="/dashboard">
+            <img src={dashbord} alt="dashboard" />
             <p>Dashboard</p>
           </Link>
         </li>

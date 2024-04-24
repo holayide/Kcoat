@@ -49,7 +49,7 @@ function Quality({ image, title, detail }) {
   return (
     <div className={style.quality}>
       <div>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </div>
       <div>
         <h4>{title}</h4>

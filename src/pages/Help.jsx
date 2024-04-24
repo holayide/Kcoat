@@ -6,9 +6,15 @@ import { QuestionCards } from "../components/Questions";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
 import whatsappLogo from "../components/ShopAssets/whatsApp.svg";
+import sms from "../components/ShopAssets/sms.svg";
+import tiktok from "../components/ShopAssets/tiktok.svg";
+import insta from "../components/ShopAssets/insta.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Help() {
+  const [showSocial, setShowSocial] = useState("false");
+
   return (
     <div className={style.helpContainer}>
       <Header />
@@ -21,13 +27,37 @@ export default function Help() {
       <div className={style.borderLine}>
         <PremierService />
       </div>
+
       {/* working */}
-      <div className={style.whatsappLogo}>
-        <Link to="https:wa.me/2348105020473">
-          <img src={whatsappLogo} alt="WhatsappLogo" />
-        </Link>
+      <div
+        className={style.socialLogo}
+        onClick={() => setShowSocial(!showSocial)}
+      >
+        {/* <Link  */}
+        {showSocial ? (
+          <img src={sms} alt="smsLogo" loading="lazy" />
+        ) : (
+          <img
+            src="../../assets/icons/cancel_menu.svg"
+            alt="cancel"
+            loading="lazy"
+          />
+        )}
+
+        <div className={showSocial ? style.disappearimg : style.smallimages}>
+          <Link to="https:wa.me/2348105020473">
+            <img src={whatsappLogo} alt="whatsappLogo" />
+          </Link>
+          <Link>
+            <img src={insta} alt="insta" loading="lazy" />
+          </Link>
+          <Link>
+            <img src={tiktok} alt="tiktok" loading="lazy" />
+          </Link>
+        </div>
       </div>
       {/* stop */}
+
       <div className={style.QAsession}>
         {Qcards.map((qcard) => {
           return (

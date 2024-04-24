@@ -18,7 +18,7 @@ const SortBy = ({ onSortChange }) => {
           </select>
         </div>
         <p>View</p>
-        <img src="../../assets/Menu.svg" alt="menu" />
+        <img src="../../assets/Menu.svg" alt="menu" loading="lazy" />
       </div>
     </div>
   );

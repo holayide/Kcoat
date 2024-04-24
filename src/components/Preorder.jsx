@@ -52,7 +52,7 @@ function PreorderCard({ picture, title, amount }) {
   return (
     <div className={style.PreorderCard}>
       <div className={style.picture}>
-        <img src={picture} alt={title} />
+        <img src={picture} alt={title} loading="lazy" />
       </div>
       <p className={style.title}>{title}</p>
       <div className={style.amount}>

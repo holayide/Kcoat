@@ -2,7 +2,8 @@
   position: relative;
 }
 
-.whatsappLogo {
+/* logo */
+.socialLogo {
   position: fixed;
   right: 5%;
 
@@ -15,7 +16,35 @@
   justify-content: center;
 
   background-color: #eee7fa;
+  cursor: pointer;
 }
+
+.smallimages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2rem; */
+  position: absolute;
+
+  bottom: 4rem;
+}
+
+.disappearimg {
+  display: none;
+}
+
+.smallimages img {
+  width: 2.5rem;
+}
+
+.smallimages img:hover {
+  width: 3rem;
+}
+
+.smallimages a:nth-last-of-type(2) {
+  margin: 0.1rem;
+}
+/* logo ends */
 
 .helpHero {
   background-image: url("../../public/assets/help.jpg");
@@ -189,4 +218,39 @@
   .qCards {
     box-shadow: none;
   }
+}
+
+@media (max-width: 500px) {
+  /* logo */
+  .socialLogo {
+    /* position: fixed; */
+    /* right: 5%; */
+
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    /* background-color: #eee7fa; */
+    /* cursor: pointer; */
+    /* background-color: red; */
+  }
+
+  .socialLogo > img:first-of-type,
+  .smallimages img {
+    width: 1.5rem;
+  }
+
+  .smallimages img:hover {
+    width: 2rem;
+  }
+
+  .smallimages {
+    bottom: 3.2rem;
+  }
+
+  /* logo ends */
 }

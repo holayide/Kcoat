@@ -1,27 +1,26 @@
-import { Link } from "react-router-dom";
-import Header from "../components/Header";
 import style from "./Account.module.css";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import NewsLetter from "../components/NewsLetter";
 import loginImg from "../../src/components/ShopAssets/login_img.jpg";
 import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+// import { isUserLogin } from "../utilities/user";
 
 export default function Account() {
   const [view, setView] = useState(false);
   // form
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   // eye
   function handleClick() {
     setView(() => !view);
   }
-
-  const navigate = useNavigate();
 
   function handleEmail(e) {
     setEmail(e.target.value);
@@ -45,10 +44,16 @@ export default function Account() {
       });
     }
 
-    setIsSubmit(true);
+    setIsLogin(true);
+    setIsLoading(true);
 
     // username: email
     const payload = { email, password };
+
+    // remove
+    // console.log("Email:", email);
+    // console.log("Password:", password);
+    // remove end
 
     fetch("https://kcoat-1-c4lk.onrender.com/UserLogin", {
       method: "POST",
@@ -63,10 +68,23 @@ export default function Account() {
         return response.json();
       })
       .then((response) => {
+        // testing
+        if (!response.token) {
+          throw new Error("Token not found in response");
+        }
+
+        // end testing
+
         // clear input{not working}
         setEmail("");
         setPassword("");
+        setIsLoading(false);
 
+        // Save token to local storage
+        localStorage.setItem("user", JSON.stringify(response));
+        // console.log(response);
+
+        // Navigate to cart route
         response && navigate("/cart");
         toast.success("Login successful!");
       })
@@ -75,24 +93,28 @@ export default function Account() {
         // clear input{not working}
         setEmail("");
         setPassword("");
+        setIsLoading(false);
 
         toast.error(error.message || "Wrong Email / Password");
       })
       .finally(() => {
-        setIsSubmit(false);
+        setIsLogin(false);
       });
   }
-  // end
 
   return (
     <div>
       <div className={style.headWrapper}>
         <Header />
       </div>
+
       <div className={style.container}>
         <div className={style.forms}>
           {/* form */}
-          <form onSubmit={handleLogin} disabled={isSubmit}>
+          <form onSubmit={handleLogin} disabled={isLogin}>
+            <div className={style.loading}>
+              {isLoading && <div>Loading...</div>}
+            </div>
             <h2>Welcome back!</h2>
             <p>Enter your details to access your account</p>
 
@@ -137,11 +159,9 @@ export default function Account() {
                 <a href="#/">Forget password ?</a>
               </div>
             </div>
-            {/* to="/Profile" link*/}
-            <button className={style.tertiaryBtn}>
-              Login
-              {/* <input type="submit" value="" /> */}
-            </button>
+            {/* to="/Profile" link added isloading*/}
+
+            <button className={style.tertiaryBtn}>Login</button>
 
             <div className={style.divider}>
               <span>Or</span>

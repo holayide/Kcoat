@@ -41,7 +41,7 @@ function MostPopularProduct({ image, title, arrivalAmt }) {
     <div className={style.productCard}>
       <div className={style.productcontainer}>
         <div className={style.productImage}>
-          <img src={image} alt={title} />
+          <img src={image} alt={title} loading="lazy" />
         </div>
       </div>
 
@@ -67,7 +67,11 @@ function MostPopularProduct({ image, title, arrivalAmt }) {
           <div className={style.popularBtn}>
             <div className={style.btnCart}>
               <div className={style.cart}>
-                <img src="../../assets/icons/minicart.svg" alt="mini cart" />
+                <img
+                  src="../../assets/icons/minicart.svg"
+                  alt="mini cart"
+                  loading="lazy"
+                />
               </div>
               <div>
                 <Button goto="./#" classname={style.primaryBtn}>

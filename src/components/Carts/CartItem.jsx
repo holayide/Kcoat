@@ -36,7 +36,7 @@ export default function CartItem() {
                 <p>{e.name}</p>
                 <p>₦{e.price}</p>
                 <button className={style.cartitemsQuantity}>
-                  <span>-</span> {cartItems[e.id]} <span>+</span>
+                  {cartItems[e.id]}
                 </button>
                 <p className={style.subtotalHeadItem}>
                   ₦{e.price * cartItems[e.id]}
@@ -72,7 +72,7 @@ export default function CartItem() {
               <h3>₦{getTotalCartAmount()}</h3>
             </div>
           </div>
-          <Link to="/payment">Proceed to payment</Link>
+          <Link to="/payment">PROCEED TO CHECK OUT</Link>
         </div>
       </div>
 

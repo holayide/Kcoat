@@ -14,6 +14,8 @@ export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  // new
+  const [isRegister, setIsRegister] = useState(false);
 
   // eye
   function handleClickReg() {
@@ -51,6 +53,9 @@ export default function Register() {
         theme: "light",
       });
     }
+
+    // new
+    setIsRegister(true);
 
     // username: email
     const payload = { username: name, email, password };
@@ -94,7 +99,7 @@ export default function Register() {
       <div className={style.container}>
         <div className={style.forms}>
           {/* form2 onSubmit={handleSubmit}*/}
-          <form onSubmit={handleRegister}>
+          <form onSubmit={handleRegister} disabled={isRegister}>
             <h2>Register</h2>
             <p>Enter your details to create an account</p>
             <div className={style.input}>

@@ -9,10 +9,10 @@ export default function ProductDisplay({ product }) {
     <div className={style.productdisplay}>
       <div className={style.productdisplayLeft}>
         <div className={style.productDisplayImgList}>
-          <img src={product.image} alt="Products" />
-          <img src={product.image} alt="Products" />
-          <img src={product.image} alt="Products" />
-          <img src={product.image} alt="Products" />
+          <img src={product.image} alt="Products" loading="lazy" />
+          <img src={product.image} alt="Products" loading="lazy" />
+          <img src={product.image} alt="Products" loading="lazy" />
+          <img src={product.image} alt="Products" loading="lazy" />
         </div>
         <div className={style.productdisplayImg}>
           <img
@@ -20,6 +20,7 @@ export default function ProductDisplay({ product }) {
             className="productdisplay-main-img"
             src={product.image}
             alt="Bigger view"
+            loading="lazy"
           />
         </div>
       </div>
@@ -27,11 +28,11 @@ export default function ProductDisplay({ product }) {
       <div className={style.productdisplayRight}>
         <h1>{product.name}</h1>
         <div className={style.stars}>
-          <img src={product.fullstar} alt="Full Star" />
-          <img src={product.fullstar} alt="Full Star" />
-          <img src={product.fullstar} alt="Full Star" />
-          <img src={product.fullstar} alt="Full Star" />
-          <img src={product.halfstar} alt="Full Star" />
+          <img src={product.fullstar} alt="Full Star" loading="lazy" />
+          <img src={product.fullstar} alt="Full Star" loading="lazy" />
+          <img src={product.fullstar} alt="Full Star" loading="lazy" />
+          <img src={product.fullstar} alt="Full Star" loading="lazy" />
+          <img src={product.halfstar} alt="Full Star" loading="lazy" />
         </div>
         <p>₦ {product.price}</p>
         <div className={style.description}>

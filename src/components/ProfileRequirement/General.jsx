@@ -18,6 +18,7 @@ const GeneralSettings = () => {
               src="../../assets/Tolani.svg"
               alt="Profile"
               className={Styles.profilePic}
+              loading="lazy"
             />
             <button className={Styles.photoButton}>
               Upload/change profile photo

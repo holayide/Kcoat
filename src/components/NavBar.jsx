@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import style from "./Header.module.css";
+import { isUserLogin } from "../utilities/user";
 
 export default function NavBar({ lists, isOpen }) {
+  const user = isUserLogin();
+
   return (
     <nav className={`${style.nav} ${isOpen ? style.navMobile : ""}`}>
       <ul>
@@ -11,6 +14,7 @@ export default function NavBar({ lists, isOpen }) {
             icontext={list.icontext}
             goto={list.goto}
             key={list.id}
+            isLogin={user}
           />
         ))}
       </ul>
@@ -18,12 +22,15 @@ export default function NavBar({ lists, isOpen }) {
   );
 }
 
-export function HeaderIcons({ iconimage, icontext, goto }) {
+export function HeaderIcons({ iconimage, icontext, goto, isLogin }) {
+  const destination = isLogin && icontext === "Account" ? "/profile" : goto;
+
   return (
     <li>
-      <NavLink to={goto}>
+      <NavLink to={destination}>
         <img src={iconimage} alt={icontext} />
-        <p>{icontext}</p>
+        <p>{isLogin && icontext === "Account" ? "User" : icontext}</p>
+        {/* <p>{icontext}</p> */}
       </NavLink>
     </li>
   );

@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import style from "./Transfer.module.css";
 import ubalogo from "../ShopAssets/UBA.png";
+import { ShopContext } from "../../Context/ShopContext";
 
 export default function Transfer() {
+  const { getTotalCartAmount, datas, cartItems } = useContext(ShopContext);
+
   return (
     <div className={style.transferWrapper}>
       <div className={style.deliverydetails}>
@@ -11,10 +15,16 @@ export default function Transfer() {
       <div className={style.itemsPurchased}>
         <div className={style.productbought}>
           <h3 className={style.items}>PRODUCT</h3>
-          <div className={style.itemsbought}>
-            <p>ANKARA TWO PIECE</p>
-            <p>14K-YELLOW GOLD EARRING</p>
-          </div>
+          {datas.map((e) => {
+            if (cartItems[e.id] > 0) {
+              return (
+                <div className={style.itemsbought}>
+                  <p>{e.name}</p>
+                </div>
+              );
+            }
+            return null;
+          })}
         </div>
         <div className={style.quantity}>
           <h3>SUBTOTAL</h3>
@@ -29,7 +39,7 @@ export default function Transfer() {
         </div>
         <div className={style.totalpay}>
           <p>TOTAL</p>
-          <p>₦ 71,000</p>
+          <p>₦ {getTotalCartAmount()}</p>
         </div>
       </div>
 

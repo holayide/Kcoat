@@ -113,14 +113,14 @@ nav ul li a:hover {
   }
 
   .navLeft {
-    top: 70px;
+    top: 68px;
     max-height: calc(100vh - 70px);
     background-color: white;
     box-shadow: 0px 18px 18px #888888;
   }
 
   .cartTop {
-    top: 315px;
+    top: 313px;
   }
 
   .navLeft .navMobile {
@@ -179,13 +179,14 @@ nav ul li a:hover {
   }
 
   .navLeft {
-    top: 70px;
+    top: 68px;
     max-height: calc(100vh - 70px);
     background-color: white;
+    box-shadow: 0px 18px 18px #888888;
   }
 
   .cartTop {
-    top: 280px;
+    top: 275px;
   }
 
   .navLeft .navMobile {
@@ -240,9 +241,10 @@ nav ul li a:hover {
   }
 
   .navLeft {
-    top: 70px;
+    top: 68px;
     max-height: calc(100vh - 70px);
     background-color: white;
+    box-shadow: 0px 20px 18px #888888;
   }
 
   .cartTop {

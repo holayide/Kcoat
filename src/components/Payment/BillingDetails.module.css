@@ -1,11 +1,13 @@
 .billingdetailsContainer {
   width: 50%;
-  border: 1px solid blue;
   padding: 1rem 1rem 0;
+
+  border-radius: 6.054px;
+  background: #fff;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
 }
 
 .billingdetailsContainer .billingdetails {
-  /* border: 1px solid black; */
   font-family: satoshi700;
   font-size: 1rem;
   font-weight: 700;
@@ -20,14 +22,9 @@
   font-size: 0.8rem;
 }
 
-.billingdetailsContainer > p {
-  border: 1px solid red;
-}
-
 .billingdetailsContainer .warning {
-  border: 1px solid green;
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 0.8rem 1rem;
 
   text-align: center;
   background-color: #f8ddd4;
@@ -36,17 +33,75 @@
   font-weight: bold;
 }
 
+/* form */
+.from,
+.from div {
+  display: flex;
+  flex-direction: column;
+}
+
+.from {
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.from div {
+  gap: 0.3rem;
+}
+
+.from div label {
+  font-family: satoshi700;
+  font-size: 0.7rem;
+}
+
+.from div input {
+  padding: 0.35rem;
+  outline: none;
+}
+
 /* place order */
-/* .banktransfer .placeorder {
-    border: 1px solid red;
-    width: 80%;
-    margin: 1rem auto 0;
-    padding: 0.8rem;
-    background-color: #292d32;
+.billingdetailsContainer .placeorder {
+  margin: 1.5rem auto 1rem;
+  padding: 0.8rem 0.8rem;
+  background-color: #292d32;
+  text-align: center;
+  cursor: pointer;
+
+  color: #fff;
+  font-family: "Volkhov", serif;
+  font-size: 0.8rem;
+}
+
+.billingdetailsContainer .placeorder:hover {
+  opacity: 0.8;
+}
+
+/* create account */
+.checklogin {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checklogin > div:first-of-type {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #8a8a8a;
+  border-radius: 3px;
+}
+
+.checklogin > div:last-of-type {
+  font-family: satoshi500;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .billingdetailsContainer {
+    width: 100%;
   }
-  
-  .banktransfer .placeorder a {
-    color: #fff; font-family: "Volkhov", serif;
-    font-size: 0.8rem;
+
+  .billingdetailsContainer > p,
+  .billingdetailsContainer .warning {
+    width: 70%;
   }
-   */
+}
