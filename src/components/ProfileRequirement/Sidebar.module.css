@@ -1,17 +1,19 @@
 .sidebar {
-  width: 20%;
-  min-width: 200px;
-  height: 100vh;
-  padding: 20px;
-  border-radius: 6.054px;
-  background: #EEE7FA;
-  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
+  min-width: 220px;
+}
+
+.sidebar .innersidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+
+  border-radius: 6.054px;
+  background: #eee7fa;
+  box-shadow: 0px 24.216px 54.486px 0px rgba(0, 0, 0, 0.06);
 }
 
-.userinfo {
+.sidebar .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,53 +27,41 @@
   margin-bottom: 10px;
 }
 
-.user-info h2 {
-  color: #000;
+.userinfo h2 {
   font-size: 1.2em;
+  font-family: "Volkhov", serif;
   margin-bottom: 5px;
 }
 
-.navigation {
-  width: 100%;
+/* navigation */
+.clickedUserMenu {
+  border-radius: 3px;
+  background-color: #cfb9f0;
 }
 
-.navigation a {
+.navigation li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px 15px;
-  color: #000;
-  text-decoration: none;
-  margin: 1rem;
-  font-size: 0.9em;
-  border-left: 4px solid transparent;
-  transition: border-color 0.3s, background-color 0.3s;
+  gap: 0.6rem;
 }
 
-.navigation a:hover {
-  border-left-color: #CFB9F0;
-  background-color: #CFB9F0;
+.navigation li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 0.9em;
+  font-family: satoshi500;
+  padding: 0.4rem 0.8rem;
+}
+
+.navigation .icon {
+  width: 1.3rem;
+  height: 1.3rem;
 }
 
 .navItem {
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
   color: #333;
-  text-decoration: none;
   font-size: 0.9em;
-  border-left: 4px solid transparent;
-  transition: border-color 0.3s, background-color 0.3s;
-}
-
-.icon {
-  margin-right: 10px;
-}
-
-.navigation a .icon {
-  margin-right: 10px;
-}
-
-.signout {
-  margin-top: auto;
 }

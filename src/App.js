@@ -26,6 +26,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AdminCustomer from "./components/Admin page/DashBoard/AdminCustomer";
 import AdminLogin from "./components/Admin page/Admin Login/AdminLogin";
+import AddProduct from "./components/Admin page/Add Product/AddProduct";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
           <Route path="/dashboard" element={<AdminDashboard />} />
           <Route path="/customerorder" element={<AdminOrders />} />
           <Route path="/productInventory" element={<ProductInventory />} />
+          <Route path="/addProduct" element={<AddProduct />} />
           <Route path="/admincustomerpage" element={<AdminCustomer />} />
           <Route path="/account" element={<Account />} />
           <Route path="/register" element={<Register />} />

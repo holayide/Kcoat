@@ -1,6 +1,8 @@
 .container {
   display: flex;
-  padding: 0 1% 5rem;
+  gap: 1.5rem;
+  /* border: 1px solid blue; */
+  margin: 0 5% 2.3rem;
 }
 
 .ProfileDetailsHeader {
@@ -10,4 +12,10 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 10% 2.3rem;
+  }
 }
