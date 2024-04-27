@@ -43,7 +43,7 @@ export default function ProductListing() {
                 <img src={dropDown} alt="Drop down" />
               </div>
             </div>
-            <Link className={style.addproduct}>
+            <Link to="/addProduct" className={style.addproduct}>
               <img src={addproduct} alt="Add Product" />
               <p>Add Product</p>
             </Link>
