@@ -48,12 +48,12 @@ export default function Help() {
         {/* href="https://Instagram.com/golden" */}
 
         <div className={showSocial ? style.smallimages : style.disappearimg}>
-          <a href="https:wa.me/2348105020473" target="blank">
+          <Link to="https://wa.me/2348105020473" target="blank">
             <img src={whatsappLogo} alt="whatsappLogo" />
-          </a>
-          <a href="https://Instagram.com/golden" target="blank">
+          </Link>
+          <Link to="https://Instagram.com/golden" target="blank">
             <img src={insta} alt="insta" loading="lazy" />
-          </a>
+          </Link>
           <Link>
             <img src={tiktok} alt="tiktok" loading="lazy" />
           </Link>

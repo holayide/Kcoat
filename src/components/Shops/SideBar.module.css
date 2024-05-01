@@ -2,7 +2,7 @@
   width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 78px;
+  gap: 72px;
 }
 
 @media (min-width: 1350px) {
@@ -81,6 +81,7 @@
   background-color: #9856da;
   width: 70%;
   height: 7px;
+  margin-bottom: 0.4rem;
 }
 
 .brandPrice p {
@@ -139,11 +140,6 @@
 
 .sidebarlabelcontainer:hover input ~ .checkmark {
   background-color: #ccc;
-}
-
-.sidebarlabelcontainer input:checked ~ .checkmark {
-  /* background-color: #2196f3; */
-  /* border: 1px solid brown; */
 }
 
 .checkmark::after {

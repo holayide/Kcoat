@@ -28,7 +28,6 @@
 
 .productdisplayRight {
   margin-top: 20px;
-  /* border: 1px solid red; */
 }
 
 .productdisplayRight > h1 {
@@ -49,7 +48,7 @@
   margin-bottom: 15px;
 }
 
-.productdisplayRight .description {
+.productdisplayRight > .description {
   width: 35ch;
   font-family: "Poppins", sans-serif;
   font-size: 0.7rem;
@@ -176,6 +175,10 @@
   .minitags {
     display: none;
   }
+
+  .productdisplayRight > .description {
+    margin: 0 auto 20px;
+  }
 }
 
 @media (max-width: 649.9px) {
@@ -214,5 +217,9 @@
 
   .minitags {
     display: none;
+  }
+
+  .productdisplayRight > .description {
+    margin: 0 auto 20px;
   }
 }
