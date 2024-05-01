@@ -136,7 +136,7 @@ header {
   }
 
   .cartTop {
-    top: 313px;
+    top: 335px;
   }
 
   .navLeft .navMobile {
@@ -148,7 +148,7 @@ header {
   }
 
   .navMobile {
-    padding-top: 15%;
+    padding-top: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,7 +202,7 @@ header {
   }
 
   .cartTop {
-    top: 275px;
+    top: 325px;
   }
 
   .navLeft .navMobile {
@@ -210,11 +210,11 @@ header {
   }
 
   .cartTop .navMobile {
-    padding-left: 5.5%;
+    padding-left: 6.2%;
   }
 
   .navMobile {
-    padding-top: 15%;
+    padding-top: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,7 +264,7 @@ header {
   }
 
   .cartTop {
-    top: 290px;
+    top: 325px;
   }
 
   .navLeft .navMobile {
@@ -272,11 +272,11 @@ header {
   }
 
   .cartTop .navMobile {
-    padding-left: 5.5%;
+    padding-left: 7.5%;
   }
 
   .navMobile {
-    padding-top: 25%;
+    padding-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
