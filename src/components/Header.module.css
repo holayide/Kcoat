@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 5% 0.2em 3%;
+  padding: 1em 6% 0.2em 3%;
   background-color: white;
 }
 
@@ -23,7 +23,7 @@ header {
 
 .nav > ul {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav > ul li {
@@ -35,7 +35,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 0.2rem;
-  font-size: 0.93rem;
+  font-size: 0.95rem;
   color: #000;
   font-family: var(--satfont400);
 }
@@ -93,6 +93,10 @@ header {
 
 /* media query */
 @media (min-width: 870px) and (max-width: 1110px) {
+  .header {
+    padding: 1em 5% 0.2em 3%;
+  }
+
   .nav > ul {
     gap: 2rem;
   }
