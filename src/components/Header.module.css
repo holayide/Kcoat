@@ -9,8 +9,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 8% 0.2em 0;
+  padding: 1em 5% 0.2em 3%;
   background-color: white;
+}
+
+.logo {
+  width: 6.8rem;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .nav > ul {

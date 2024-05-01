@@ -30,7 +30,6 @@ export function HeaderIcons({ iconimage, icontext, goto, isLogin }) {
       <NavLink to={destination}>
         <img src={iconimage} alt={icontext} />
         <p>{isLogin && icontext === "Account" ? "User" : icontext}</p>
-        {/* <p>{icontext}</p> */}
       </NavLink>
     </li>
   );
