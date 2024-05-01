@@ -25,7 +25,7 @@ export default function ProductCategories({ category, selectedCategory }) {
   }
   const filteredProducts = filteredData(datas, selectedCategory, category);
   return (
-    <div className="shop-product">
+    <div className={style.shopProduct}>
       <Result products={filteredProducts} />
     </div>
   );

@@ -22,12 +22,13 @@
   color: #333;
   margin-bottom: 8px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .OrderHistory > p {
   color: #666;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -91,13 +92,13 @@
 .ItemDetails h3 {
   margin: 0;
   color: #333;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .ItemDetails p {
   margin: 5px 0;
   color: #666;
-  font-size: 14px;
+  font-size: 0.87rem;
 }
 
 .ItemDetails p:nth-child(4) {
@@ -105,19 +106,72 @@
   color: #333;
 }
 
+.statusBtn {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 7rem;
+}
+
 .ItemDetails button {
-  background-color: #a2a2a2;
+  padding: 8px 15px;
+  font-size: 0.7rem;
+
+  background-color: #eee7fa;
+  border-radius: 8px;
   border: none;
-  padding: 10px 15px;
-  color: white;
-  font-size: 14px;
-  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .ItemDetails button:hover {
-  background-color: #a2a2a2;
+  background-color: #cfb9f0;
 }
 
-/* Add additional styles for responsiveness and other details */
+/* media query */
+@media (max-width: 750px) {
+  .OrderHistory {
+    margin: 0 3% 3rem;
+  }
+
+  .orderhistoryMain {
+    gap: 0.9rem;
+  }
+
+  .OrderHistory h1 {
+    font-size: 1.8rem;
+  }
+
+  .OrderHistory > p {
+    font-size: 0.75rem;
+  }
+
+  .orderHeader {
+    gap: 3rem;
+  }
+
+  .orderHeader diV > h3 {
+    font-size: 0.8rem;
+  }
+
+  .orderHeader diV > p {
+    font-size: 0.65rem;
+  }
+
+  .ItemDetails h3 {
+    font-size: 0.95rem;
+  }
+
+  .ItemDetails p {
+    font-size: 0.75rem;
+  }
+
+  .statusBtn {
+    display: inline-block;
+  }
+
+  .ItemDetails button {
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+  }
+}

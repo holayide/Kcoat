@@ -3,9 +3,15 @@
 }
 
 /* logo */
+
 .socialLogo {
+  text-align: end;
+  margin: 0 3%;
+
   position: fixed;
-  right: 5%;
+  bottom: 15%;
+  right: 10px;
+  z-index: 999;
 
   width: 60px;
   height: 60px;
@@ -22,11 +28,11 @@
 .smallimages {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* gap: 2rem; */
-  position: absolute;
+  gap: 0.2rem;
 
-  bottom: 4rem;
+  position: absolute;
+  right: 18%;
+  bottom: 100%;
 }
 
 .disappearimg {

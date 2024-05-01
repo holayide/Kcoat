@@ -1,5 +1,4 @@
 import React from "react";
-// import Sidebar from "../ProfileRequirement/SideBar";
 import NewsLetter from "../../components/NewsLetter";
 import Footer from "../../components/Footer";
 import Styles from "./Order.module.css";
@@ -65,8 +64,10 @@ const OrderHistory = () => {
                       <p>{item.category}</p>
                       <p>{item.size}</p>
                       <p>{item.price}</p>
-                      <p>{order.status}</p>
-                      <button>RE-ORDER</button>
+                      <div className={Styles.statusBtn}>
+                        <p>{order.status}</p>
+                        <button>RE-ORDER</button>
+                      </div>
                     </div>
                   </div>
                 ))}

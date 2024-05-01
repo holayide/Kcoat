@@ -13,26 +13,26 @@ header {
   background-color: white;
 }
 
-nav ul {
+.nav > ul {
   display: flex;
   gap: 2rem;
 }
 
-nav ul li {
+.nav > ul li {
   display: inline-block;
 }
 
-nav ul li a {
+.nav > ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000;
   font-family: var(--satfont400);
 }
 
-nav ul li a:hover {
+.nav > ul li a:hover {
   color: #3734a9;
 }
 
@@ -85,18 +85,18 @@ nav ul li a:hover {
 
 /* media query */
 @media (min-width: 870px) and (max-width: 1110px) {
-  nav ul {
+  .nav > ul {
     gap: 2rem;
   }
 
-  nav ul li a {
+  .nav > ul li a {
     font-size: 0.8rem;
   }
 }
 
 /* mobile responsiveness for large desktop */
 @media (min-width: 600px) and (max-width: 870px) {
-  nav,
+  .nav,
   .cartCircle {
     display: none;
   }

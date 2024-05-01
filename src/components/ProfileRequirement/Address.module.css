@@ -96,7 +96,7 @@
 }
 
 /* Responsive design  */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .inputRow,
   .selectRow {
     flex-direction: column;
@@ -106,4 +106,4 @@
   .selectHalf {
     width: 100%;
   }
-}
+} */

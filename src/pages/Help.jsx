@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Help() {
-  const [showSocial, setShowSocial] = useState("false");
+  const [showSocial, setShowSocial] = useState(false);
 
   return (
     <div className={style.helpContainer}>
@@ -28,34 +28,38 @@ export default function Help() {
         <PremierService />
       </div>
 
-      {/* working */}
+      {/*not  working */}
+
       <div
         className={style.socialLogo}
         onClick={() => setShowSocial(!showSocial)}
       >
         {/* <Link  */}
         {showSocial ? (
-          <img src={sms} alt="smsLogo" loading="lazy" />
-        ) : (
           <img
             src="../../assets/icons/cancel_menu.svg"
             alt="cancel"
             loading="lazy"
           />
+        ) : (
+          <img src={sms} alt="smsLogo" loading="lazy" />
         )}
 
-        <div className={showSocial ? style.disappearimg : style.smallimages}>
-          <Link to="https:wa.me/2348105020473">
+        {/* href="https://Instagram.com/golden" */}
+
+        <div className={showSocial ? style.smallimages : style.disappearimg}>
+          <a href="https:wa.me/2348105020473" target="blank">
             <img src={whatsappLogo} alt="whatsappLogo" />
-          </Link>
-          <Link>
+          </a>
+          <a href="https://Instagram.com/golden" target="blank">
             <img src={insta} alt="insta" loading="lazy" />
-          </Link>
+          </a>
           <Link>
             <img src={tiktok} alt="tiktok" loading="lazy" />
           </Link>
         </div>
       </div>
+
       {/* stop */}
 
       <div className={style.QAsession}>

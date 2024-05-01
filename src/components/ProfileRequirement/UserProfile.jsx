@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./User.module.css";
+import { Link } from "react-router-dom";
 
 const UserProfile = () => {
   return (
@@ -31,6 +32,10 @@ const UserProfile = () => {
         <div className={styles.detail}>
           <p>Phone Number</p>
           <p>+234 ********</p>
+        </div>
+
+        <div className={styles.detailProfitLink}>
+          <Link>Edit profile</Link>
         </div>
       </div>
     </div>

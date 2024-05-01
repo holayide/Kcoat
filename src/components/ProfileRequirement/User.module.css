@@ -45,3 +45,25 @@
   font-size: 0.95rem;
   font-weight: 500;
 }
+
+.detailProfitLink {
+  padding: 1rem 1rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #551aa8;
+}
+
+@media (max-width: 890px) {
+  .MainContent {
+    width: 100%;
+  }
+
+  .MainContent h1 {
+    font-size: 1.5rem;
+  }
+
+  .MainContent > h4 {
+    font-size: 0.8rem;
+  }
+}

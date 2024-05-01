@@ -65,3 +65,32 @@
   color: #333;
   font-size: 0.9em;
 }
+
+/* media query */
+@media (max-width: 890px) {
+  .sidebar {
+    min-width: 100px;
+  }
+
+  .sidebar .innersidebar {
+    padding: 1rem 0.8rem;
+  }
+
+  .userinfo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .userinfo h2 {
+    font-size: 0.7em;
+  }
+
+  .navigation .icon {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .navigation li a p {
+    display: none;
+  }
+}

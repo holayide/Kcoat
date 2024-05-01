@@ -70,7 +70,7 @@
 .inventoryCategories .inventoryCategoriesboxes {
   display: flex;
   gap: 0.8rem;
-  border: 1px solid blueviolet;
+  /* border: 1px solid blueviolet; */
 }
 
 .inventoryCategoriesboxes .inventorymenus {
@@ -166,23 +166,23 @@
 }
 
 @media (min-width: 900px) and (max-width: 1100px) {
-  .listitemsheaderitems {
+  /* .listitemsheaderitems {
     background-color: red;
-  }
+  } */
 
   .listInventoryProducts {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-size: 0.7rem;
   }
 }
 
 @media (min-width: 600px) and (max-width: 899.9px) {
-  .listitemsheaderitems {
+  /* .listitemsheaderitems {
     background-color: blue;
-  }
+  } */
 
   .listInventoryProducts {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 0.7rem;
     text-align: center;
   }

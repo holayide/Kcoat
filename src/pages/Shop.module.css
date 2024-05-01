@@ -12,10 +12,12 @@
   gap: 3%;
 }
 
+/* media */
 @media (min-width: 1000px) {
   .banner img {
     height: 58vh;
   }
+
   .shop {
     margin: 25px 9% 40px;
   }

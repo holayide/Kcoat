@@ -1,3 +1,7 @@
+.shopProduct {
+  width: 100%;
+}
+
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
