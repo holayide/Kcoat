@@ -13,9 +13,10 @@
 }
 
 /* media */
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .banner img {
     height: 58vh;
+    /* object-fit: contain; */
   }
 
   .shop {
