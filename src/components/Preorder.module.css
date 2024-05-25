@@ -57,14 +57,18 @@
 }
 
 .miniBtn {
-  background-color: rgba(112, 72, 232, 0.5);
+  display: inline-block;
+  background-color: #bca9f4;
+  color: #000000;
   border-radius: 6.216px;
-  padding: 5px 7px;
+  padding: 0.5rem 0.8rem;
   font-size: 0.6rem;
   opacity: 1;
+  letter-spacing: 0.1rem;
+  font-family: satoshi700;
+  margin-top: 0.2rem;
 }
 
-/* iiiiiiiiiiiiiiiiiiiiiiiiiii */
 .miniBtn:hover,
 .btnCart:hover {
   opacity: 0.8;
@@ -146,7 +150,8 @@
   align-items: center;
   gap: 5px;
   border-radius: 3.824px;
-  background: rgba(112, 72, 232, 0.5);
+  background-color: #bca9f4;
+  color: #000;
   padding: 3px 8px;
   opacity: 1;
   cursor: pointer;
@@ -156,10 +161,14 @@
   padding-top: 5px;
 }
 
+.miniCart {
+  font-weight: 700;
+}
+
 .primaryBtn {
   color: #000;
   font-size: 0.6rem;
-  font-family: var(--satfont400);
+  font-family: satoshi700;
 }
 
 /* categories */

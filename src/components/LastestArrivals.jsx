@@ -106,6 +106,7 @@ function ArrivalCard({ image, title, description, arrivalAmt, love }) {
               <img
                 src="../../assets/icons/minicart.svg"
                 alt="mini cart"
+                className={style.miniCart}
                 loading="lazy"
               />
             </div>

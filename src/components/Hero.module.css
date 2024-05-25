@@ -6,12 +6,12 @@
   align-items: center;
   gap: 7%;
   padding: 1.2em 3% 0;
+
+  overflow: hidden;
 }
 
 .heroText {
   width: 40%;
-
-  /* border: 1px solid red; */
 }
 
 .leftText {
@@ -120,15 +120,23 @@
 }
 
 /* media query */
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
   .main {
     gap: 3%;
-    padding: 1.2em 3% 0 10%;
+    padding: 1.2em 2.5% 0 10%;
   }
 
   .heroImages .purple {
     transform: translateY(-97%);
     margin-left: -9%;
+  }
+
+  .leftText {
+    width: 55ch;
+  }
+
+  .leftText h1 {
+    font-size: 3rem;
   }
 }
 
