@@ -18,10 +18,12 @@ export default function Help() {
   return (
     <div className={style.helpContainer}>
       <Header />
-      <div className={style.helpHero}>
-        <div className={style.innerHelpHero}>
-          <h2>24/7 CUSTOMER SERVICE</h2>
-          <p>We are always available to provide you with assistance</p>
+      <div className={style.helpHeroWrapper}>
+        <div className={style.helpHero}>
+          <div className={style.innerHelpHero}>
+            <h2>24/7 CUSTOMER SERVICE</h2>
+            <p>We are always available to provide you with assistance</p>
+          </div>
         </div>
       </div>
       <div className={style.borderLine}>
