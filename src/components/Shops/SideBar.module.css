@@ -231,3 +231,9 @@
     margin-top: 0px;
   }
 }
+
+@media (max-width: 380px) {
+  .brandlist li a {
+    font-size: 0.857rem;
+  }
+}

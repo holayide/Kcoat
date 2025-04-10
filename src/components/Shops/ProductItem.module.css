@@ -124,3 +124,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 380px) {
+  .productbuttons > img {
+    display: none;
+  }
+
+  .productbuttons > button {
+    font-size: 0.7rem;
+  }
+}
